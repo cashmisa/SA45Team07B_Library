@@ -20,7 +20,6 @@ namespace SA45Team07B
 
         private void btnFindBk_Click(object sender, EventArgs e)
         {
-
             using (BookPopUpSearch popsearch = new BookPopUpSearch())
             {
                 if (popsearch.ShowDialog() == DialogResult.OK)
@@ -46,6 +45,8 @@ namespace SA45Team07B
                         mtbYear.Text = bookFound.PublishedYear.ToString();
                     }
                     bookFound.RFIDs = popsearch.RFIDsOfBookFound;
+
+                    toolStripStatusLabel1.Text = string.Format("<<{0}>>", bookFound.BookTitle);
                 }
             }
             using (SA45Team07B_LibraryEntities context = new SA45Team07B_LibraryEntities())
