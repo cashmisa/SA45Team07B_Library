@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace SA45Team07B
 {
-    partial class AboutBox : Form
+    public partial class AboutBox : Form
     {
         public AboutBox()
         {

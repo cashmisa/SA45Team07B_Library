@@ -186,5 +186,10 @@ namespace SA45Team07B
             ReportForm form = new ReportForm(ReportForm.MEMBER_DETAIL_REPORT);
             form.ShowDialog();
         }
+
+        private void getHelpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Please approach our friendly Consultant Mr. Venkat at mr.venkat@nus.edu.sg");
+        }
     }
 }
