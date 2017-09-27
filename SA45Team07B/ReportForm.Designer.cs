@@ -34,13 +34,12 @@
             // 
             // reportViewer
             // 
-            this.reportViewer.ActiveViewIndex = 0;
+            this.reportViewer.ActiveViewIndex = -1;
             this.reportViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.reportViewer.Cursor = System.Windows.Forms.Cursors.Default;
             this.reportViewer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.reportViewer.Location = new System.Drawing.Point(0, 0);
             this.reportViewer.Name = "reportViewer";
-            this.reportViewer.ReportSource = this.MemberDetailReport1;
             this.reportViewer.Size = new System.Drawing.Size(581, 568);
             this.reportViewer.TabIndex = 0;
             this.reportViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
