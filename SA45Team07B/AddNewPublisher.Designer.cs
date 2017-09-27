@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.errorProviderPublisherID = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProviderPublisherName = new System.Windows.Forms.ErrorProvider(this.components);
             this.labelPublisherName = new System.Windows.Forms.Label();
@@ -77,7 +77,8 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(716, 954);
+            this.label1.Location = new System.Drawing.Point(322, 417);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Visible = false;
             // 
             // errorProviderPublisherID
@@ -94,10 +95,10 @@
             // 
             this.labelPublisherName.AutoSize = true;
             this.labelPublisherName.BackColor = System.Drawing.Color.Transparent;
-            this.labelPublisherName.Location = new System.Drawing.Point(57, 194);
-            this.labelPublisherName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPublisherName.Location = new System.Drawing.Point(26, 85);
+            this.labelPublisherName.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.labelPublisherName.Name = "labelPublisherName";
-            this.labelPublisherName.Size = new System.Drawing.Size(279, 48);
+            this.labelPublisherName.Size = new System.Drawing.Size(124, 21);
             this.labelPublisherName.TabIndex = 42;
             this.labelPublisherName.Text = "Publisher Name:";
             // 
@@ -303,9 +304,10 @@
             "Yemen",
             "Zambia",
             "Zimbabwe"});
-            this.comboBoxCountry.Location = new System.Drawing.Point(373, 261);
+            this.comboBoxCountry.Location = new System.Drawing.Point(168, 114);
+            this.comboBoxCountry.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.comboBoxCountry.Name = "comboBoxCountry";
-            this.comboBoxCountry.Size = new System.Drawing.Size(562, 56);
+            this.comboBoxCountry.Size = new System.Drawing.Size(255, 29);
             this.comboBoxCountry.TabIndex = 47;
             this.comboBoxCountry.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxes_KeyDown);
             this.comboBoxCountry.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxes_KeyPress);
@@ -315,10 +317,10 @@
             this.labelPublisherID.AutoSize = true;
             this.labelPublisherID.BackColor = System.Drawing.Color.Transparent;
             this.labelPublisherID.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.labelPublisherID.Location = new System.Drawing.Point(57, 119);
-            this.labelPublisherID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPublisherID.Location = new System.Drawing.Point(26, 52);
+            this.labelPublisherID.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.labelPublisherID.Name = "labelPublisherID";
-            this.labelPublisherID.Size = new System.Drawing.Size(219, 48);
+            this.labelPublisherID.Size = new System.Drawing.Size(97, 21);
             this.labelPublisherID.TabIndex = 40;
             this.labelPublisherID.Text = "Publisher ID:";
             // 
@@ -329,10 +331,10 @@
             this.buttonCancel.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
             this.buttonCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCancel.Location = new System.Drawing.Point(673, 347);
-            this.buttonCancel.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonCancel.Location = new System.Drawing.Point(303, 152);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(262, 91);
+            this.buttonCancel.Size = new System.Drawing.Size(118, 40);
             this.buttonCancel.TabIndex = 49;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = false;
@@ -342,10 +344,10 @@
             // 
             this.labelCountry.AutoSize = true;
             this.labelCountry.BackColor = System.Drawing.Color.Transparent;
-            this.labelCountry.Location = new System.Drawing.Point(57, 269);
-            this.labelCountry.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCountry.Location = new System.Drawing.Point(26, 118);
+            this.labelCountry.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.labelCountry.Name = "labelCountry";
-            this.labelCountry.Size = new System.Drawing.Size(153, 48);
+            this.labelCountry.Size = new System.Drawing.Size(69, 21);
             this.labelCountry.TabIndex = 41;
             this.labelCountry.Text = "Country:";
             // 
@@ -356,10 +358,10 @@
             this.buttonAdd.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
             this.buttonAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdd.Location = new System.Drawing.Point(373, 347);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonAdd.Location = new System.Drawing.Point(168, 152);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(262, 91);
+            this.buttonAdd.Size = new System.Drawing.Size(118, 40);
             this.buttonAdd.TabIndex = 48;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = false;
@@ -371,17 +373,19 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(329, 194);
+            this.label2.Location = new System.Drawing.Point(148, 85);
+            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(25, 32);
+            this.label2.Size = new System.Drawing.Size(12, 13);
             this.label2.TabIndex = 43;
             this.label2.Text = "*";
             // 
             // textBoxPublisherName
             // 
-            this.textBoxPublisherName.Location = new System.Drawing.Point(373, 187);
+            this.textBoxPublisherName.Location = new System.Drawing.Point(168, 82);
+            this.textBoxPublisherName.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.textBoxPublisherName.Name = "textBoxPublisherName";
-            this.textBoxPublisherName.Size = new System.Drawing.Size(562, 55);
+            this.textBoxPublisherName.Size = new System.Drawing.Size(255, 29);
             this.textBoxPublisherName.TabIndex = 46;
             this.textBoxPublisherName.TextChanged += new System.EventHandler(this.textBoxes_Validated);
             this.textBoxPublisherName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxes_KeyDown);
@@ -394,17 +398,19 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(269, 119);
+            this.label3.Location = new System.Drawing.Point(121, 52);
+            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(25, 32);
+            this.label3.Size = new System.Drawing.Size(12, 13);
             this.label3.TabIndex = 44;
             this.label3.Text = "*";
             // 
             // textBoxPublisherID
             // 
-            this.textBoxPublisherID.Location = new System.Drawing.Point(373, 112);
+            this.textBoxPublisherID.Location = new System.Drawing.Point(168, 49);
+            this.textBoxPublisherID.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.textBoxPublisherID.Name = "textBoxPublisherID";
-            this.textBoxPublisherID.Size = new System.Drawing.Size(562, 55);
+            this.textBoxPublisherID.Size = new System.Drawing.Size(255, 29);
             this.textBoxPublisherID.TabIndex = 45;
             this.textBoxPublisherID.TextChanged += new System.EventHandler(this.textBoxes_Validated);
             this.textBoxPublisherID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxes_KeyDown);
@@ -425,9 +431,11 @@
             this.groupBox1.Controls.Add(this.labelCountry);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.buttonAdd);
-            this.groupBox1.Location = new System.Drawing.Point(25, 176);
+            this.groupBox1.Location = new System.Drawing.Point(11, 77);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(981, 531);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.groupBox1.Size = new System.Drawing.Size(441, 232);
             this.groupBox1.TabIndex = 51;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add New Publisher";
@@ -435,9 +443,10 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(365, 51);
+            this.label10.Location = new System.Drawing.Point(164, 22);
+            this.label10.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(528, 48);
+            this.label10.Size = new System.Drawing.Size(234, 21);
             this.label10.TabIndex = 51;
             this.label10.Text = "Enter new Publisher information";
             // 
@@ -455,9 +464,11 @@
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.buttonSaveChanges);
-            this.groupBox2.Location = new System.Drawing.Point(25, 767);
+            this.groupBox2.Location = new System.Drawing.Point(11, 336);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(981, 531);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.groupBox2.Size = new System.Drawing.Size(441, 232);
             this.groupBox2.TabIndex = 52;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Modify Publisher";
@@ -465,9 +476,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(365, 51);
+            this.label9.Location = new System.Drawing.Point(164, 22);
+            this.label9.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(473, 48);
+            this.label9.Size = new System.Drawing.Size(208, 21);
             this.label9.TabIndex = 50;
             this.label9.Text = "Select Publisher from the list";
             // 
@@ -475,10 +487,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(57, 194);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(26, 85);
+            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(279, 48);
+            this.label4.Size = new System.Drawing.Size(124, 21);
             this.label4.TabIndex = 42;
             this.label4.Text = "Publisher Name:";
             // 
@@ -684,19 +696,21 @@
             "Yemen",
             "Zambia",
             "Zimbabwe"});
-            this.comboBoxModCountry.Location = new System.Drawing.Point(373, 261);
+            this.comboBoxModCountry.Location = new System.Drawing.Point(168, 114);
+            this.comboBoxModCountry.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.comboBoxModCountry.Name = "comboBoxModCountry";
-            this.comboBoxModCountry.Size = new System.Drawing.Size(562, 56);
+            this.comboBoxModCountry.Size = new System.Drawing.Size(255, 29);
             this.comboBoxModCountry.TabIndex = 47;
             this.comboBoxModCountry.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxes_KeyDown);
             this.comboBoxModCountry.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxes_KeyPress);
             // 
             // textBoxModPublisherID
             // 
-            this.textBoxModPublisherID.Location = new System.Drawing.Point(373, 112);
+            this.textBoxModPublisherID.Location = new System.Drawing.Point(168, 49);
+            this.textBoxModPublisherID.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.textBoxModPublisherID.Name = "textBoxModPublisherID";
             this.textBoxModPublisherID.ReadOnly = true;
-            this.textBoxModPublisherID.Size = new System.Drawing.Size(562, 55);
+            this.textBoxModPublisherID.Size = new System.Drawing.Size(255, 29);
             this.textBoxModPublisherID.TabIndex = 45;
             this.textBoxModPublisherID.TextChanged += new System.EventHandler(this.textBoxes2_Validated);
             this.textBoxModPublisherID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxes_KeyDown);
@@ -708,10 +722,10 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label5.Location = new System.Drawing.Point(57, 119);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(26, 52);
+            this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(219, 48);
+            this.label5.Size = new System.Drawing.Size(97, 21);
             this.label5.TabIndex = 40;
             this.label5.Text = "Publisher ID:";
             // 
@@ -721,9 +735,10 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(269, 119);
+            this.label6.Location = new System.Drawing.Point(121, 52);
+            this.label6.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(25, 32);
+            this.label6.Size = new System.Drawing.Size(12, 13);
             this.label6.TabIndex = 44;
             this.label6.Text = "*";
             // 
@@ -734,10 +749,10 @@
             this.buttonModCancel.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
             this.buttonModCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.buttonModCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonModCancel.Location = new System.Drawing.Point(673, 347);
-            this.buttonModCancel.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonModCancel.Location = new System.Drawing.Point(303, 152);
+            this.buttonModCancel.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.buttonModCancel.Name = "buttonModCancel";
-            this.buttonModCancel.Size = new System.Drawing.Size(262, 91);
+            this.buttonModCancel.Size = new System.Drawing.Size(118, 40);
             this.buttonModCancel.TabIndex = 49;
             this.buttonModCancel.Text = "Cancel";
             this.buttonModCancel.UseVisualStyleBackColor = false;
@@ -745,9 +760,10 @@
             // 
             // textBoxModPublisherName
             // 
-            this.textBoxModPublisherName.Location = new System.Drawing.Point(373, 187);
+            this.textBoxModPublisherName.Location = new System.Drawing.Point(168, 82);
+            this.textBoxModPublisherName.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.textBoxModPublisherName.Name = "textBoxModPublisherName";
-            this.textBoxModPublisherName.Size = new System.Drawing.Size(562, 55);
+            this.textBoxModPublisherName.Size = new System.Drawing.Size(255, 29);
             this.textBoxModPublisherName.TabIndex = 46;
             this.textBoxModPublisherName.TextChanged += new System.EventHandler(this.textBoxes2_Validated);
             this.textBoxModPublisherName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxes_KeyDown);
@@ -758,10 +774,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(57, 269);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(26, 118);
+            this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(153, 48);
+            this.label7.Size = new System.Drawing.Size(69, 21);
             this.label7.TabIndex = 41;
             this.label7.Text = "Country:";
             // 
@@ -771,9 +787,10 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(329, 194);
+            this.label8.Location = new System.Drawing.Point(148, 85);
+            this.label8.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(25, 32);
+            this.label8.Size = new System.Drawing.Size(12, 13);
             this.label8.TabIndex = 43;
             this.label8.Text = "*";
             // 
@@ -784,10 +801,10 @@
             this.buttonSaveChanges.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
             this.buttonSaveChanges.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.buttonSaveChanges.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSaveChanges.Location = new System.Drawing.Point(373, 347);
-            this.buttonSaveChanges.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonSaveChanges.Location = new System.Drawing.Point(168, 152);
+            this.buttonSaveChanges.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.buttonSaveChanges.Name = "buttonSaveChanges";
-            this.buttonSaveChanges.Size = new System.Drawing.Size(262, 91);
+            this.buttonSaveChanges.Size = new System.Drawing.Size(118, 40);
             this.buttonSaveChanges.TabIndex = 48;
             this.buttonSaveChanges.Text = "Save Changes";
             this.buttonSaveChanges.UseVisualStyleBackColor = false;
@@ -797,50 +814,51 @@
             // 
             this.dataGridViewPublishers.AllowUserToAddRows = false;
             this.dataGridViewPublishers.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.BurlyWood;
-            this.dataGridViewPublishers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.BurlyWood;
+            this.dataGridViewPublishers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewPublishers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewPublishers.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewPublishers.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewPublishers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.BurlyWood;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewPublishers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.BurlyWood;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewPublishers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewPublishers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Tan;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewPublishers.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Tan;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewPublishers.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewPublishers.GridColor = System.Drawing.Color.White;
-            this.dataGridViewPublishers.Location = new System.Drawing.Point(1200, 210);
+            this.dataGridViewPublishers.Location = new System.Drawing.Point(476, 90);
+            this.dataGridViewPublishers.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.dataGridViewPublishers.Name = "dataGridViewPublishers";
             this.dataGridViewPublishers.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(181)))), ((int)(((byte)(111)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewPublishers.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(181)))), ((int)(((byte)(111)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewPublishers.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewPublishers.RowHeadersVisible = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.BurlyWood;
-            this.dataGridViewPublishers.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.BurlyWood;
+            this.dataGridViewPublishers.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewPublishers.RowTemplate.Height = 37;
             this.dataGridViewPublishers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewPublishers.Size = new System.Drawing.Size(1100, 1000);
+            this.dataGridViewPublishers.Size = new System.Drawing.Size(495, 478);
             this.dataGridViewPublishers.TabIndex = 53;
             this.dataGridViewPublishers.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPublishers_CellClick);
             // 
@@ -858,9 +876,10 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(36, 36);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 1187);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 588);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1745, 53);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 6, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(993, 26);
             this.statusStrip1.TabIndex = 54;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -869,18 +888,19 @@
             this.toolStripStatusLabel1.BackColor = System.Drawing.SystemColors.Control;
             this.toolStripStatusLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(322, 48);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(142, 21);
             this.toolStripStatusLabel1.Text = "Manage Publisher. ";
             // 
             // AddNewPublisher
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(20F, 48F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1745, 1240);
+            this.ClientSize = new System.Drawing.Size(993, 614);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.dataGridViewPublishers);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AddNewPublisher";
             this.Text = "Manage Publisher";
             this.Load += new System.EventHandler(this.AddNewPublisher_Load);
