@@ -72,9 +72,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(626, 135);
+            this.pictureBox1.Location = new System.Drawing.Point(631, 135);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(390, 261);
+            this.pictureBox1.Size = new System.Drawing.Size(387, 261);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -88,7 +88,7 @@
             this.Transaction.Location = new System.Drawing.Point(30, 92);
             this.Transaction.Name = "Transaction";
             this.Transaction.Size = new System.Drawing.Size(549, 104);
-            this.Transaction.TabIndex = 16;
+            this.Transaction.TabIndex = 1;
             this.Transaction.TabStop = false;
             this.Transaction.Text = "Transactions";
             // 
@@ -106,7 +106,7 @@
             this.btnReturn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(135, 58);
-            this.btnReturn.TabIndex = 12;
+            this.btnReturn.TabIndex = 11;
             this.btnReturn.Text = "Return";
             this.btnReturn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReturn.UseVisualStyleBackColor = false;
@@ -122,7 +122,7 @@
             this.groupBox2.Location = new System.Drawing.Point(30, 225);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(549, 104);
-            this.groupBox2.TabIndex = 17;
+            this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Books";
             // 
@@ -196,7 +196,7 @@
             this.groupBox3.Location = new System.Drawing.Point(30, 368);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(549, 104);
-            this.groupBox3.TabIndex = 17;
+            this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Members";
             // 
@@ -266,7 +266,7 @@
             this.Welcome.BackColor = System.Drawing.Color.Transparent;
             this.Welcome.Font = new System.Drawing.Font("Segoe UI Black", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Welcome.ForeColor = System.Drawing.Color.Peru;
-            this.Welcome.Location = new System.Drawing.Point(786, 415);
+            this.Welcome.Location = new System.Drawing.Point(783, 415);
             this.Welcome.Name = "Welcome";
             this.Welcome.Size = new System.Drawing.Size(246, 40);
             this.Welcome.TabIndex = 18;
@@ -287,7 +287,6 @@
             this.Name = "DashBoard";
             this.Controls.SetChildIndex(this.Transaction, 0);
             this.Controls.SetChildIndex(this.pictureBox1, 0);
-            this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.groupBox2, 0);
             this.Controls.SetChildIndex(this.groupBox3, 0);
             this.Controls.SetChildIndex(this.Welcome, 0);

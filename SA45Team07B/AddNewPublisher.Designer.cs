@@ -75,12 +75,6 @@
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(322, 417);
-            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label1.Visible = false;
-            // 
             // errorProviderPublisherID
             // 
             this.errorProviderPublisherID.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
@@ -905,7 +899,6 @@
             this.Text = "Manage Publisher";
             this.Load += new System.EventHandler(this.AddNewPublisher_Load);
             this.Controls.SetChildIndex(this.groupBox1, 0);
-            this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.groupBox2, 0);
             this.Controls.SetChildIndex(this.dataGridViewPublishers, 0);
             this.Controls.SetChildIndex(this.statusStrip1, 0);

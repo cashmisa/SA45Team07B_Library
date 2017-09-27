@@ -125,7 +125,6 @@ namespace SA45Team07B
                 dpDateDue.Value = dpDateIssued.Value.AddDays(borrower.MemberCategories.LoanPeriod);
                 txtbPeriod.Value = borrower.MemberCategories.LoanPeriod;
 
-                btnEdit.Enabled = true;
             }
             else
             {
@@ -142,7 +141,6 @@ namespace SA45Team07B
                 dpDateDue.ResetText();
                 txtbPeriod.ResetText();
 
-                btnEdit.Enabled = false;
             }
         }
 
@@ -246,15 +244,7 @@ namespace SA45Team07B
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            ModifyMember form = new ModifyMember();
-            form.ModifiedMember = borrower;
-            form.ShowDialog();
-            if(form.DialogResult == DialogResult.OK)
-            {
-                borrower = form.ModifiedMember;
-                txtbName.Text = borrower.MemberName;
-                txtbFaculty.Text = borrower.Faculties.FacultyName;
-            }
+
         }
     }
 }

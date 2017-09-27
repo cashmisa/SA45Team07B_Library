@@ -20,7 +20,6 @@ namespace SA45Team07B
 
         private void btnFindBk_Click(object sender, EventArgs e)
         {
-
             using (BookPopUpSearch popsearch = new BookPopUpSearch())
             {
                 if (popsearch.ShowDialog() == DialogResult.OK)
@@ -46,25 +45,28 @@ namespace SA45Team07B
                         mtbYear.Text = bookFound.PublishedYear.ToString();
                     }
                     bookFound.RFIDs = popsearch.RFIDsOfBookFound;
-                }
-            }
-            using (SA45Team07B_LibraryEntities context = new SA45Team07B_LibraryEntities())
-            {
-                //use bookid to find rfid list, use rfids to find each transaction in Issuetran, loop to check availability
 
-                ////get rfid liststed 
-                var rfids = from x in context.RFIDs
-                            where x.BookID == bookFound.BookID
-                            orderby x.Availability
-                            select new
-                            {
-                                RFID = x.RFID.ToUpper(),
-                                Availability = x.Availability.ToUpper(),
-                                DateBorrowed = context.IssueTrans.Where(y => y.RFID == x.RFID).FirstOrDefault().DateIssued.ToString(),
-                                DueDate = context.IssueTrans.Where(y => y.TransactionID == x.LastTransactionID).FirstOrDefault().DateDue.ToString(),
-                                BorrowedBy = context.IssueTrans.Where(y => y.TransactionID == x.LastTransactionID).FirstOrDefault().MemberID.ToString()
-                            };
-                dgvAvail.DataSource = rfids.ToList();
+                    toolStripStatusLabel1.Text = string.Format("<<{0}>>", bookFound.BookTitle);
+
+                    using (SA45Team07B_LibraryEntities context = new SA45Team07B_LibraryEntities())
+                    {
+                        //use bookid to find rfid list, use rfids to find each transaction in Issuetran, loop to check availability
+
+                        ////get rfid liststed 
+                        var rfids = from x in context.RFIDs
+                                    where x.BookID == bookFound.BookID
+                                    orderby x.Availability
+                                    select new
+                                    {
+                                        RFID = x.RFID.ToUpper(),
+                                        Availability = x.Availability.ToUpper(),
+                                        DateBorrowed = context.IssueTrans.Where(y => y.RFID == x.RFID).FirstOrDefault().DateIssued.ToString(),
+                                        DueDate = context.IssueTrans.Where(y => y.TransactionID == x.LastTransactionID).FirstOrDefault().DateDue.ToString(),
+                                        BorrowedBy = context.IssueTrans.Where(y => y.TransactionID == x.LastTransactionID).FirstOrDefault().MemberID.ToString()
+                                    };
+                        dgvAvail.DataSource = rfids.ToList();
+                    }
+                }
             }
         }
         

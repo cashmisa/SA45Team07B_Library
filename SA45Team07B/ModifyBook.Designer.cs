@@ -69,9 +69,12 @@
             this.gbxRFID = new System.Windows.Forms.GroupBox();
             this.btnUndo = new System.Windows.Forms.Button();
             this.btnDeleteRFID = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.epModifyBk)).BeginInit();
             this.gbxBasicInfo.SuspendLayout();
             this.gbxRFID.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAddRFID
@@ -125,7 +128,7 @@
             this.btnCancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Location = new System.Drawing.Point(622, 602);
+            this.btnCancel.Location = new System.Drawing.Point(622, 596);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(92, 40);
             this.btnCancel.TabIndex = 21;
@@ -139,7 +142,7 @@
             this.btnSubmit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnSubmit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubmit.Location = new System.Drawing.Point(369, 602);
+            this.btnSubmit.Location = new System.Drawing.Point(369, 596);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(124, 40);
             this.btnSubmit.TabIndex = 20;
@@ -495,10 +498,28 @@
             this.btnDeleteRFID.TabIndex = 70;
             this.btnDeleteRFID.UseVisualStyleBackColor = true;
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.BackColor = System.Drawing.SystemColors.Control;
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 660);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1084, 22);
+            this.statusStrip1.TabIndex = 97;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(175, 17);
+            this.toolStripStatusLabel1.Text = "Please choose a book to modify";
+            // 
             // ModifyBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
-            this.ClientSize = new System.Drawing.Size(1084, 661);
+            this.ClientSize = new System.Drawing.Size(1084, 682);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.gbxBasicInfo);
@@ -509,12 +530,14 @@
             this.Controls.SetChildIndex(this.gbxBasicInfo, 0);
             this.Controls.SetChildIndex(this.btnSubmit, 0);
             this.Controls.SetChildIndex(this.btnCancel, 0);
-            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.statusStrip1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.epModifyBk)).EndInit();
             this.gbxBasicInfo.ResumeLayout(false);
             this.gbxBasicInfo.PerformLayout();
             this.gbxRFID.ResumeLayout(false);
             this.gbxRFID.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -560,5 +583,7 @@
         private System.Windows.Forms.GroupBox gbxRFID;
         private System.Windows.Forms.Button btnUndo;
         private System.Windows.Forms.Button btnDeleteRFID;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }

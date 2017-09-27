@@ -54,7 +54,6 @@
             this.txtbName = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtbMemberID = new System.Windows.Forms.TextBox();
-            this.btnEdit = new System.Windows.Forms.Button();
             this.txtbFaculty = new System.Windows.Forms.TextBox();
             this.lblFaculty = new System.Windows.Forms.Label();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
@@ -77,10 +76,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtbPeriod)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.Visible = false;
             // 
             // lblMemberID
             // 
@@ -329,7 +324,6 @@
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.txtbMemberID);
-            this.groupBox3.Controls.Add(this.btnEdit);
             this.groupBox3.Controls.Add(this.txtbFaculty);
             this.groupBox3.Controls.Add(this.lblMemberID);
             this.groupBox3.Controls.Add(this.lblFaculty);
@@ -352,21 +346,6 @@
             this.txtbMemberID.TabIndex = 15;
             this.txtbMemberID.TextChanged += new System.EventHandler(this.txtbMemberID_TextChanged);
             this.txtbMemberID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbMemberID_KeyPress);
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.BackColor = System.Drawing.Color.White;
-            this.btnEdit.Enabled = false;
-            this.btnEdit.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
-            this.btnEdit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
-            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.Location = new System.Drawing.Point(183, 354);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(75, 44);
-            this.btnEdit.TabIndex = 19;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = false;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // txtbFaculty
             // 
@@ -502,21 +481,20 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.ClientSize = new System.Drawing.Size(958, 551);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BorrowForm";
             this.Text = "Borrow Book";
             this.Load += new System.EventHandler(this.BorrowForm_Load);
-            this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.groupBox1, 0);
             this.Controls.SetChildIndex(this.groupBox2, 0);
-            this.Controls.SetChildIndex(this.groupBox3, 0);
             this.Controls.SetChildIndex(this.groupBox4, 0);
             this.Controls.SetChildIndex(this.statusStrip1, 0);
+            this.Controls.SetChildIndex(this.groupBox3, 0);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -547,7 +525,6 @@
         private System.Windows.Forms.TextBox txtbRFID;
         private System.Windows.Forms.Label lblRFID;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.TextBox txtbStatus;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.TextBox txtbMaxBorrowed;

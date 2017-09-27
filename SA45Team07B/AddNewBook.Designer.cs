@@ -68,9 +68,12 @@
             this.btnDeleteRFID = new System.Windows.Forms.Button();
             this.gbxBasicInfo = new System.Windows.Forms.GroupBox();
             this.gbxRFID = new System.Windows.Forms.GroupBox();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.epAddBk)).BeginInit();
             this.gbxBasicInfo.SuspendLayout();
             this.gbxRFID.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtbBkId
@@ -410,7 +413,7 @@
             // 
             // txtbRFID
             // 
-            this.txtbRFID.Location = new System.Drawing.Point(165, 52);
+            this.txtbRFID.Location = new System.Drawing.Point(161, 52);
             this.txtbRFID.Name = "txtbRFID";
             this.txtbRFID.Size = new System.Drawing.Size(263, 29);
             this.txtbRFID.TabIndex = 14;
@@ -489,11 +492,29 @@
             this.gbxRFID.TabStop = false;
             this.gbxRFID.Text = "Add RFID";
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.BackColor = System.Drawing.SystemColors.Control;
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 662);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1084, 22);
+            this.statusStrip1.TabIndex = 60;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(86, 17);
+            this.toolStripStatusLabel1.Text = "Add New Book";
+            // 
             // AddNewBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.ClientSize = new System.Drawing.Size(1084, 661);
+            this.ClientSize = new System.Drawing.Size(1084, 684);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.gbxBasicInfo);
@@ -504,14 +525,16 @@
             this.Load += new System.EventHandler(this.AddNewBook_Load);
             this.Controls.SetChildIndex(this.gbxRFID, 0);
             this.Controls.SetChildIndex(this.gbxBasicInfo, 0);
-            this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.btnSubmit, 0);
             this.Controls.SetChildIndex(this.btnCancel, 0);
+            this.Controls.SetChildIndex(this.statusStrip1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.epAddBk)).EndInit();
             this.gbxBasicInfo.ResumeLayout(false);
             this.gbxBasicInfo.PerformLayout();
             this.gbxRFID.ResumeLayout(false);
             this.gbxRFID.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -557,5 +580,7 @@
         private System.Windows.Forms.Button btnDeleteRFID;
         private System.Windows.Forms.GroupBox gbxBasicInfo;
         private System.Windows.Forms.GroupBox gbxRFID;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }

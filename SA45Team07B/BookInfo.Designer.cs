@@ -67,9 +67,12 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.gbxBasicInfo = new System.Windows.Forms.GroupBox();
             this.gbxAvail = new System.Windows.Forms.GroupBox();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAvail)).BeginInit();
             this.gbxBasicInfo.SuspendLayout();
             this.gbxAvail.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // mtbISBN
@@ -428,10 +431,28 @@
             this.gbxAvail.TabStop = false;
             this.gbxAvail.Text = "Availability";
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.BackColor = System.Drawing.SystemColors.Control;
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 709);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1154, 22);
+            this.statusStrip1.TabIndex = 101;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(153, 17);
+            this.toolStripStatusLabel1.Text = "Please select a book to view";
+            // 
             // BookInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
-            this.ClientSize = new System.Drawing.Size(1084, 711);
+            this.ClientSize = new System.Drawing.Size(1154, 731);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.gbxBasicInfo);
             this.Controls.Add(this.gbxAvail);
@@ -439,12 +460,14 @@
             this.Text = "View Book Details";
             this.Controls.SetChildIndex(this.gbxAvail, 0);
             this.Controls.SetChildIndex(this.gbxBasicInfo, 0);
-            this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.btnClose, 0);
+            this.Controls.SetChildIndex(this.statusStrip1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAvail)).EndInit();
             this.gbxBasicInfo.ResumeLayout(false);
             this.gbxBasicInfo.PerformLayout();
             this.gbxAvail.ResumeLayout(false);
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -481,5 +504,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DateBorrowed;
         private System.Windows.Forms.DataGridViewTextBoxColumn DueDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn BorrowedBy;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }

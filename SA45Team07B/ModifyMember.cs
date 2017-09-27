@@ -168,8 +168,6 @@ namespace SA45Team07B
                 context2.SaveChanges();
                 MessageBox.Show(string.Format("Successfully updated Member <<{0}>>.", memb.MemberName));
                 Close();
-                MemberPopUpSearch mps = new MemberPopUpSearch();
-                mps.Show();
             }
             else if (dr == DialogResult.No)
             {

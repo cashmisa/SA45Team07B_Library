@@ -24,11 +24,16 @@ namespace SA45Team07B
             {
                 if (popsearch.ShowDialog() == DialogResult.OK)
                 {
+                    
                     bookFound = popsearch.BookFound;
                     txtbBkId.Text = bookFound.BookID.ToString();
                     mtbISBN.Text = bookFound.ISBN.ToString();
+
                     txtbBkTitle.Text = bookFound.BookTitle.ToString();
                     txtbAuthor.Text = bookFound.Author.ToString();
+
+                    toolStripStatusLabel1.Text = string.Format("<<{0}>>", bookFound.BookTitle.ToString());
+
                     using (SA45Team07B_LibraryEntities context = new SA45Team07B_LibraryEntities())
                     {
                         cbxPublisher.DataSource = context.Publishers.Select(x => x.PublisherName).ToList();
@@ -210,6 +215,7 @@ namespace SA45Team07B
                 }
             }
         }
+
 
         private void txtbBkTitle_Validating(object sender, CancelEventArgs e)
         {

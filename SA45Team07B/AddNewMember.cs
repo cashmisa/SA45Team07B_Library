@@ -190,8 +190,6 @@ namespace SA45Team07B
                 context2.SaveChanges();
                 MessageBox.Show(string.Format("Successfully added <<{0}>>.", newMember.MemberName));
                 Close();
-                MemberPopUpSearch mps = new MemberPopUpSearch();
-                mps.Show();
             }
             else if (dr == DialogResult.No)
             {
