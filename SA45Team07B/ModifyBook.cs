@@ -102,7 +102,7 @@ namespace SA45Team07B
 
                     bookToBeModified.TotalCopy = (Int16)bookToBeModified.RFIDs.Count();
                     context.SaveChanges();
-                    MessageBox.Show("Saved")
+                    MessageBox.Show("Saved");
                     Close();
                 }
             }
