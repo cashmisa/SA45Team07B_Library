@@ -72,9 +72,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(626, 135);
+            this.pictureBox1.Location = new System.Drawing.Point(631, 135);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(390, 261);
+            this.pictureBox1.Size = new System.Drawing.Size(387, 261);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -266,7 +266,7 @@
             this.Welcome.BackColor = System.Drawing.Color.Transparent;
             this.Welcome.Font = new System.Drawing.Font("Segoe UI Black", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Welcome.ForeColor = System.Drawing.Color.Peru;
-            this.Welcome.Location = new System.Drawing.Point(786, 415);
+            this.Welcome.Location = new System.Drawing.Point(783, 415);
             this.Welcome.Name = "Welcome";
             this.Welcome.Size = new System.Drawing.Size(246, 40);
             this.Welcome.TabIndex = 18;
@@ -287,7 +287,6 @@
             this.Name = "DashBoard";
             this.Controls.SetChildIndex(this.Transaction, 0);
             this.Controls.SetChildIndex(this.pictureBox1, 0);
-            this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.groupBox2, 0);
             this.Controls.SetChildIndex(this.groupBox3, 0);
             this.Controls.SetChildIndex(this.Welcome, 0);

@@ -413,7 +413,7 @@
             // 
             // txtbRFID
             // 
-            this.txtbRFID.Location = new System.Drawing.Point(165, 52);
+            this.txtbRFID.Location = new System.Drawing.Point(161, 52);
             this.txtbRFID.Name = "txtbRFID";
             this.txtbRFID.Size = new System.Drawing.Size(263, 29);
             this.txtbRFID.TabIndex = 14;
@@ -525,7 +525,6 @@
             this.Load += new System.EventHandler(this.AddNewBook_Load);
             this.Controls.SetChildIndex(this.gbxRFID, 0);
             this.Controls.SetChildIndex(this.gbxBasicInfo, 0);
-            this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.btnSubmit, 0);
             this.Controls.SetChildIndex(this.btnCancel, 0);
             this.Controls.SetChildIndex(this.statusStrip1, 0);
