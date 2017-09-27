@@ -140,7 +140,8 @@
             this.textBoxDescription.Size = new System.Drawing.Size(279, 124);
             this.textBoxDescription.TabIndex = 23;
             this.textBoxDescription.TabStop = false;
-            this.textBoxDescription.Text = "A product by Team 7B of class System Analysis 45, ISS - NUS.";
+            this.textBoxDescription.Text = "A product by Team 7B of class System Analysis 45, ISS - NUS. \r\nIncluding:\r\n- Tang" +
+    " Xiaowen\r\n- Ong Xin Ying\r\n- Tan Chun Ket\r\n- Ton That Minh Nhat";
             // 
             // okButton
             // 
