@@ -245,12 +245,6 @@
     <Compile Include="Publisher.cs">
       <DependentUpon>LibraryManagement.tt</DependentUpon>
     </Compile>
-    <Compile Include="RecordLost.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RecordLost.Designer.cs">
-      <DependentUpon>RecordLost.cs</DependentUpon>
-    </Compile>
     <Compile Include="ReportForm.cs">
       <SubType>Form</SubType>
     </Compile>

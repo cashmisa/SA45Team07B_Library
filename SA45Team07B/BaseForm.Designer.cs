@@ -237,13 +237,15 @@
             // 
             this.bookListToolStripMenuItem.Name = "bookListToolStripMenuItem";
             this.bookListToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
-            this.bookListToolStripMenuItem.Text = "Book List";
+            this.bookListToolStripMenuItem.Text = "Book Assessment";
+            this.bookListToolStripMenuItem.Click += new System.EventHandler(this.bookListToolStripMenuItem_Click);
             // 
             // memberListToolStripMenuItem
             // 
             this.memberListToolStripMenuItem.Name = "memberListToolStripMenuItem";
             this.memberListToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
             this.memberListToolStripMenuItem.Text = "Member List";
+            this.memberListToolStripMenuItem.Click += new System.EventHandler(this.memberListToolStripMenuItem_Click);
             // 
             // transactionListToolStripMenuItem
             // 
