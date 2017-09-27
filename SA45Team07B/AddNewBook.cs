@@ -13,6 +13,7 @@ namespace SA45Team07B
     public partial class AddNewBook : SA45Team07B.BaseForm
     {
         Book newbook;
+
         public AddNewBook()
         {
             InitializeComponent();
@@ -61,10 +62,10 @@ namespace SA45Team07B
         {
             using (SA45Team07B_LibraryEntities context = new SA45Team07B_LibraryEntities())
             {
-
+                newbook.BookID = long.Parse(txtbBkId.Text);
                 //assign value for fields not require validation
-                newbook.BookTitle = txtbBkTitle.Text;
-                newbook.Author = txtbAuthor.Text;
+                newbook.BookTitle = txtbBkTitle.Text.Trim();
+                newbook.Author = txtbAuthor.Text.Trim();
                 if (newbook.PublisherValidation(cbxPublisher, epAddBk) && newbook.SubjectNameValidation(cbxSubjectName, epAddBk))
                 {
                     newbook.PublisherID = context.Publishers.Where(x => x.PublisherName == cbxPublisher.Text).First().PublisherID.ToString();
@@ -75,30 +76,26 @@ namespace SA45Team07B
                     && newbook.CallNumValidation(txtbPrice, epAddBk) 
                     && newbook.PriceValidation(txtbPrice, epAddBk))
                 {
-                    newbook.ISBN = mtbISBN.Text;
-                    newbook.CallNumber = txtbCallNum.Text;
-                    newbook.Price = decimal.Parse(txtbPrice.Text);
+                    newbook.ISBN = mtbISBN.Text.Trim();
+                    newbook.CallNumber = txtbCallNum.Text.Trim();
+                    newbook.Price = decimal.Parse(txtbPrice.Text.Trim());
                 }
 
                 //assign value for fields allow null value
-                if (txtbEd.Text != string.Empty)
+                if (txtbEd.Text.Trim() != string.Empty)
                 {
-                    newbook.Edition = txtbEd.Text;
+                    newbook.Edition = txtbEd.Text.Trim();
                 }
-                if (mtbYear.Text != string.Empty)
+                if (mtbYear.Text.Trim() != string.Empty)
                 {
                     if (newbook.YearValidation(mtbYear, epAddBk))
                     {
-                        newbook.PublishedYear = mtbYear.Text;
+                        newbook.PublishedYear = mtbYear.Text.Trim();
                     }
                 }
-                long bookid = (long)context.Books.OrderByDescending(x => x.BookID).First().BookID + 1;
-
-                //add RFID for single or multiple copies of the book
-
+                
                 newbook.AddRFID(lbxRFID);
                 newbook.TotalCopy = (Int16)newbook.RFIDs.Count();
-                MessageBox.Show(newbook.TotalCopy.ToString());
 
                 //Submission validation
                 if (!this.ValidateChildren())
@@ -126,7 +123,7 @@ namespace SA45Team07B
             {
                 if (newbook.RFIDValidation(txtbRFID, lbxRFID, epAddBk))
                 {
-                    lbxRFID.Items.Add(txtbRFID.Text);
+                    lbxRFID.Items.Add(txtbRFID.Text.Trim());
                     txtbRFID.Clear();
                 }
             }
@@ -167,8 +164,6 @@ namespace SA45Team07B
         {
             newbook.SubjectNameValidation(cbxSubjectName, epAddBk);
         }
-
-        
     }
 
     }

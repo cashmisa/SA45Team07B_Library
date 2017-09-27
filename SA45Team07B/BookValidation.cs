@@ -17,13 +17,13 @@ namespace SA45Team07B
             using (SA45Team07B_LibraryEntities context = new SA45Team07B_LibraryEntities())
             {
                 //validate length of isbn
-                if (mtb.Text.Length != 13)
+                if (mtb.Text.Trim().Length != 13)
                 {
                     ep.SetError(mtb, "Please enter a valid ISBN consists of 13 digits");
                     return false;
                 }
                 //validate if an existing isbn
-                else if (context.Books.Where(x => x.ISBN == mtb.Text).FirstOrDefault() != null)
+                else if (context.Books.Where(x => x.ISBN == mtb.Text.Trim()).FirstOrDefault() != null)
                 {
                     ep.SetError(mtb, "ISBN already exists");
                     return false;
@@ -61,7 +61,7 @@ namespace SA45Team07B
         public bool PriceValidation(Control txtb, ErrorProvider ep)
         {
             decimal price;
-            if (!decimal.TryParse(txtb.Text, out price))
+            if (!decimal.TryParse(txtb.Text.Trim(), out price))
             {
                 ep.SetError(txtb, "Please enter a valid number");
                 return false;
@@ -78,12 +78,12 @@ namespace SA45Team07B
             using (SA45Team07B_LibraryEntities context = new SA45Team07B_LibraryEntities())
             {
                 //check for existing call number
-                if (context.Books.Where(x => x.CallNumber == txtb.Text).FirstOrDefault() != null)
+                if (context.Books.Where(x => x.CallNumber == txtb.Text.Trim()).FirstOrDefault() != null)
                 {
                     ep.SetError(txtb, "Book with the same Call Number already exists");
                     return false;
                 }
-                else if (txtb.Text.Length == 0)
+                else if (txtb.Text.Trim().Length == 0)
                 {
                     ep.SetError(txtb, "Please enter a call number");
                     return false;
@@ -151,12 +151,12 @@ namespace SA45Team07B
         {
             using (SA45Team07B_LibraryEntities context = new SA45Team07B_LibraryEntities())
             {
-                if (txtb.Text.Length < 9 || txtb.Text.Length >10)
+                if (txtb.Text.Trim().Length < 9 || txtb.Text.Trim().Length >10)
                 {
                     ep.SetError(txtb, "Invalid RFID");
                     return false;
                 }
-                else if (context.RFIDs.Where(x => x.RFID == txtb.Text).FirstOrDefault() != null)
+                else if (context.RFIDs.Where(x => x.RFID == txtb.Text.Trim()).FirstOrDefault() != null)
                 {
                     ep.SetError(txtb, "RFID already exists");
                     return false;
