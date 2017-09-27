@@ -10,8 +10,6 @@ using System.Windows.Forms;
 
 namespace SA45Team07B
 {
-
-
     public partial class MemberTransForm : SA45Team07B.BaseForm
     {
         private Member memberFound;
@@ -20,7 +18,7 @@ namespace SA45Team07B
         private List<IssueTran> onLoanTransactionRecords;
         private List<IssueTran> returnedTransactionRecords;
 
-        private bool? submitsuccessful;
+        private bool? submitSuccessful;
 
         public MemberTransForm()
         {
@@ -230,11 +228,11 @@ namespace SA45Team07B
 
                                 if (i > 0)
                                 {
-                                    submitsuccessful = true;
+                                    submitSuccessful = true;
                                 }
                                 else
                                 {
-                                    submitsuccessful = false;
+                                    submitSuccessful = false;
                                 }
 
                                 this.ActiveControl = txtbRemarksOfSelectedTransaction;
@@ -299,15 +297,15 @@ namespace SA45Team07B
                     txtbRemarksOfSelectedTransaction.Text = string.Empty;
                 }
 
-                if (submitsuccessful == true)
+                if (submitSuccessful == true)
                 {
                     toolStripStatusLabel1.Text = "Remarks has been submitted.";
-                    submitsuccessful = null;
+                    submitSuccessful = null;
                 }
-                else if(submitsuccessful == false)
+                else if(submitSuccessful == false)
                 {
                     toolStripStatusLabel1.Text = "No change.";
-                    submitsuccessful = null;
+                    submitSuccessful = null;
                 }
                 else
                 {

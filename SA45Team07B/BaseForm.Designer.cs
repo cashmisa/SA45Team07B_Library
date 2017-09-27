@@ -52,7 +52,6 @@
             this.bookListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.memberListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
-            this.crosstabReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chartReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -225,7 +224,6 @@
             this.bookListToolStripMenuItem,
             this.memberListToolStripMenuItem,
             this.toolStripMenuItem2,
-            this.crosstabReportToolStripMenuItem,
             this.chartReportToolStripMenuItem});
             this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
             this.reportToolStripMenuItem.Size = new System.Drawing.Size(69, 25);
@@ -249,12 +247,6 @@
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(262, 6);
-            // 
-            // crosstabReportToolStripMenuItem
-            // 
-            this.crosstabReportToolStripMenuItem.Name = "crosstabReportToolStripMenuItem";
-            this.crosstabReportToolStripMenuItem.Size = new System.Drawing.Size(265, 26);
-            this.crosstabReportToolStripMenuItem.Text = "[cross-tab report]";
             // 
             // chartReportToolStripMenuItem
             // 
@@ -384,7 +376,6 @@
         private System.Windows.Forms.ToolStripMenuItem bookListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem memberListToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem crosstabReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem chartReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.NotifyIcon notifyIconLibraryManagement;

@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace SA45Team07B
@@ -54,6 +55,11 @@ namespace SA45Team07B
                 MessageBox.Show("No changes");
                 DialogResult = DialogResult.Cancel;
             }
+            else if (!DataService.CheckRFIDAvailability(txtbRFID.Text))
+            {
+                MessageBox.Show("This book is on loan. Please close the transaction", "Warning");
+                return;
+            }
             else
             {
                 adjustRFID = txtbRFID.Text;
@@ -62,7 +68,7 @@ namespace SA45Team07B
                 MessageBox.Show("Update Success!");
                 DialogResult = DialogResult.OK;
             }
-            DialogResult = DialogResult.OK;
+            
             Close();
         }
 

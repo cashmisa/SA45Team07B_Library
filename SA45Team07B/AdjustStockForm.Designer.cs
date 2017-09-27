@@ -188,7 +188,7 @@
             this.btnMoreRFID.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
             this.btnMoreRFID.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.btnMoreRFID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMoreRFID.Location = new System.Drawing.Point(311, 56);
+            this.btnMoreRFID.Location = new System.Drawing.Point(313, 59);
             this.btnMoreRFID.Name = "btnMoreRFID";
             this.btnMoreRFID.Size = new System.Drawing.Size(29, 29);
             this.btnMoreRFID.TabIndex = 22;
@@ -246,7 +246,7 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(97, 21);
             this.toolStripStatusLabel1.Text = "Adjust stock.";
             // 
-            // AdjustStock
+            // AdjustStockForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
@@ -256,7 +256,7 @@
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSubmit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "AdjustStock";
+            this.Name = "AdjustStockForm";
             this.Text = "Stock Adjustment";
             this.Load += new System.EventHandler(this.AdjustStock_Load);
             ((System.ComponentModel.ISupportInitialize)(this.epRFID)).EndInit();
