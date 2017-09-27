@@ -10,11 +10,11 @@ using System.Threading;
 
 namespace SA45Team07B
 {
-    public partial class AddNewBook : SA45Team07B.BaseForm
+    public partial class AddNewBookForm : SA45Team07B.BaseForm
     {
         Book newbook;
 
-        public AddNewBook()
+        public AddNewBookForm()
         {
             InitializeComponent();
         }
