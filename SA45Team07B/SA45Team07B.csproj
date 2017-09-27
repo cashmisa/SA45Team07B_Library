@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B2B74BC-63C6-4270-B8BD-51991CFB66A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SA45Team07B</RootNamespace>
+    <AssemblyName>SA45Team07B</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewBook.Designer.cs">
+      <DependentUpon>AddNewBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewMember.Designer.cs">
+      <DependentUpon>AddNewMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewPublisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewPublisher.Designer.cs">
+      <DependentUpon>AddNewPublisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdjustStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdjustStock.Designer.cs">
+      <DependentUpon>AdjustStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseModalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseModalForm.Designer.cs">
+      <DependentUpon>BaseModalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book.cs">
+      <DependentUpon>LibraryManagement.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BookInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookInfo.Designer.cs">
+      <DependentUpon>BookInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookPopUpSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookPopUpSearch.Designer.cs">
+      <DependentUpon>BookPopUpSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookSubject.cs">
+      <DependentUpon>LibraryManagement.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BookValidation.cs" />
+    <Compile Include="DashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashBoard.Designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrowForm.Designer.cs">
+      <DependentUpon>BorrowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataService.cs" />
+    <Compile Include="Faculty.cs">
+      <DependentUpon>LibraryManagement.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IssueTran.cs">
+      <DependentUpon>LibraryManagement.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryManagement.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryManagement.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryManagement.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryManagement.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryManagement.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryManagement.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Member.cs">
+      <DependentUpon>LibraryManagement.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberCategories.cs">
+      <DependentUpon>LibraryManagement.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberDetailReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MemberDetailReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MemberInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberInfo.Designer.cs">
+      <DependentUpon>MemberInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberPopUpSearchcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberPopUpSearchcs.Designer.cs">
+      <DependentUpon>MemberPopUpSearchcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberTrans.Designer.cs">
+      <DependentUpon>MemberTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyBook.Designer.cs">
+      <DependentUpon>ModifyBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyMember.Designer.cs">
+      <DependentUpon>ModifyMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyPublisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyPublisher.Designer.cs">
+      <DependentUpon>ModifyPublisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Publisher.cs">
+      <DependentUpon>LibraryManagement.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RecordLost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecordLost.Designer.cs">
+      <DependentUpon>RecordLost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnForm.Designer.cs">
+      <DependentUpon>ReturnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RFIDTag.cs">
+      <DependentUpon>LibraryManagement.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockAdjustment.cs">
+      <DependentUpon>LibraryManagement.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewBook.resx">
+      <DependentUpon>AddNewBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewMember.resx">
+      <DependentUpon>AddNewMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewPublisher.resx">
+      <DependentUpon>AddNewPublisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdjustStock.resx">
+      <DependentUpon>AdjustStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseModalForm.resx">
+      <DependentUpon>BaseModalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookInfo.resx">
+      <DependentUpon>BookInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookPopUpSearch.resx">
+      <DependentUpon>BookPopUpSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrowForm.resx">
+      <DependentUpon>BorrowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberDetailReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MemberDetailReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberInfo.resx">
+      <DependentUpon>MemberInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberPopUpSearchcs.resx">
+      <DependentUpon>MemberPopUpSearchcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberTrans.resx">
+      <DependentUpon>MemberTrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyBook.resx">
+      <DependentUpon>ModifyBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyMember.resx">
+      <DependentUpon>ModifyMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnForm.resx">
+      <DependentUpon>ReturnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="LibraryManagement.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LibraryManagement.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="LibraryDataSet.xsc">
+      <DependentUpon>LibraryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LibraryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibraryDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibraryDataSet.xss">
+      <DependentUpon>LibraryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LibraryManagement.edmx.diagram">
+      <DependentUpon>LibraryManagement.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LibraryManagement.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LibraryManagement.edmx</DependentUpon>
+      <LastGenOutput>LibraryManagement.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="LibraryManagement.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LibraryManagement.edmx</DependentUpon>
+      <LastGenOutput>LibraryManagement.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\Undo1.png" />
+    <None Include="Resources\undo.png" />
+    <None Include="Resources\bin.png" />
+    <None Include="Resources\1Borrow1.png" />
+    <None Include="Resources\9FdMmbr.png" />
+    <None Include="Resources\8ModiMmbr.png" />
+    <None Include="Resources\7AddMmbr.png" />
+    <None Include="Resources\6FdBk.png" />
+    <None Include="Resources\5ModiBk.png" />
+    <None Include="Resources\4Addbk.png" />
+    <None Include="Resources\2Return.png" />
+    <None Include="Resources\1Borrow.png" />
+    <None Include="Resources\greybackground3-modi.jpg" />
+    <None Include="Resources\garbage-bin-png-8.png" />
+    <None Include="Resources\BackgroundImage.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
