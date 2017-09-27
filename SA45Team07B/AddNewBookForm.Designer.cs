@@ -1,6 +1,6 @@
 ﻿namespace SA45Team07B
 {
-    partial class AddNewBook
+    partial class AddNewBookForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNewBook));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNewBookForm));
             this.txtbBkId = new System.Windows.Forms.TextBox();
             this.lblBkId = new System.Windows.Forms.Label();
             this.lblISBN = new System.Windows.Forms.Label();

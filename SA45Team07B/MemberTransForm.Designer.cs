@@ -1,6 +1,6 @@
 ﻿namespace SA45Team07B
 {
-    partial class MemberTrans
+    partial class MemberTransForm
     {
         /// <summary>
         /// Required designer variable.

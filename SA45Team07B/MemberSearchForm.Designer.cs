@@ -1,6 +1,6 @@
 ﻿namespace SA45Team07B
 {
-    partial class MemberPopUpSearch
+    partial class MemberSearchForm
     {
         /// <summary>
         /// Required designer variable.

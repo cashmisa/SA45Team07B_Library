@@ -9,18 +9,18 @@ using System.Windows.Forms;
 
 namespace SA45Team07B
 {
-    public partial class BookInfo : SA45Team07B.BaseForm
+    public partial class BookInfoForm : SA45Team07B.BaseForm
     {
         Book bookFound;
 
-        public BookInfo()
+        public BookInfoForm()
         {
             InitializeComponent();
         }
 
         private void btnFindBk_Click(object sender, EventArgs e)
         {
-            using (BookPopUpSearch popsearch = new BookPopUpSearch())
+            using (BookSearchForm popsearch = new BookSearchForm())
             {
                 if (popsearch.ShowDialog() == DialogResult.OK)
                 {

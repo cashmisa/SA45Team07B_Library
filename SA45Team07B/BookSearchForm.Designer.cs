@@ -1,6 +1,6 @@
 ﻿namespace SA45Team07B
 {
-    partial class BookPopUpSearch
+    partial class BookSearchForm
     {
         /// <summary>
         /// Required designer variable.

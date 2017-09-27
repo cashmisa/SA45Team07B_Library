@@ -12,7 +12,7 @@ namespace SA45Team07B
 {
 
 
-    public partial class MemberTrans : SA45Team07B.BaseForm
+    public partial class MemberTransForm : SA45Team07B.BaseForm
     {
         private Member memberFound;
         private MemberCategories memberTypeOfMemberFound;
@@ -22,14 +22,14 @@ namespace SA45Team07B
 
         private bool? submitsuccessful;
 
-        public MemberTrans()
+        public MemberTransForm()
         {
             InitializeComponent();
         }
 
         private void btnSearchMember_Click(object sender, EventArgs e)
         {
-            using (MemberPopUpSearch mps = new MemberPopUpSearch())
+            using (MemberSearchForm mps = new MemberSearchForm())
             {
                 if (mps.ShowDialog() == DialogResult.OK)
                 {

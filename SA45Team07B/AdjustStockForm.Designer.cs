@@ -1,6 +1,6 @@
 ﻿namespace SA45Team07B
 {
-    partial class AdjustStock
+    partial class AdjustStockForm
     {
         /// <summary>
         /// Required designer variable.

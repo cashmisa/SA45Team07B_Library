@@ -1,6 +1,6 @@
 ﻿namespace SA45Team07B
 {
-    partial class BookInfo
+    partial class BookInfoForm
     {
         /// <summary>
         /// Required designer variable.

@@ -1,6 +1,6 @@
 ﻿namespace SA45Team07B
 {
-    partial class AddNewPublisher
+    partial class AddNewPublisherForm
     {
         /// <summary>
         /// Required designer variable.

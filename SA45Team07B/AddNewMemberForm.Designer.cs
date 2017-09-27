@@ -1,6 +1,6 @@
 ﻿namespace SA45Team07B
 {
-    partial class AddNewMember
+    partial class AddNewMemberForm
     {
         /// <summary>
         /// Required designer variable.

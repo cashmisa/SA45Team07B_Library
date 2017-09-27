@@ -10,9 +10,9 @@ using System.Text.RegularExpressions;
 
 namespace SA45Team07B
 {
-    public partial class AddNewMember : SA45Team07B.BaseForm
+    public partial class AddNewMemberForm : SA45Team07B.BaseForm
     {
-        public AddNewMember()
+        public AddNewMemberForm()
         {
             InitializeComponent();
         }

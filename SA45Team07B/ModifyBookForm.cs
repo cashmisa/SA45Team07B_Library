@@ -20,7 +20,7 @@ namespace SA45Team07B
 
         private void btnFindBk_Click(object sender, EventArgs e)
         {
-            using (BookPopUpSearch popsearch = new BookPopUpSearch())
+            using (BookSearchForm popsearch = new BookSearchForm())
             {
                 if (popsearch.ShowDialog() == DialogResult.OK)
                 {

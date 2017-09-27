@@ -10,7 +10,7 @@ using System.Text.RegularExpressions;
 
 namespace SA45Team07B
 {
-    public partial class ModifyMember : SA45Team07B.BaseForm
+    public partial class ModifyMemberForm : SA45Team07B.BaseForm
     {
         private Member mem;
 
@@ -20,7 +20,7 @@ namespace SA45Team07B
             set { mem = value; }
         }
 
-        public ModifyMember()
+        public ModifyMemberForm()
         {
             InitializeComponent();
         }
@@ -36,7 +36,7 @@ namespace SA45Team07B
         //Retrieve member info from another popup search
         private void buttonFind_Click(object sender, EventArgs e)
         {
-            using (MemberPopUpSearch mps = new MemberPopUpSearch())
+            using (MemberSearchForm mps = new MemberSearchForm())
             {
                 if (mps.ShowDialog() == DialogResult.OK)
                 {
