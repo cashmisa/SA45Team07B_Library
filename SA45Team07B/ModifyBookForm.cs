@@ -97,7 +97,7 @@ namespace SA45Team07B
                     bookToBeModified.BookTitle = bookModified.BookTitle;
                     bookToBeModified.BookSubjects = context.BookSubjects.Where(x => x.SubjectName == cbxSubjectName.Text).First();
                     bookToBeModified.CallNumber = bookModified.CallNumber;
-                    bookToBeModified.Author = txtbAuthor.Text; //Author not require validation
+                    bookToBeModified.Author = txtbAuthor.Text.Trim(); //Author not require validation
                     bookToBeModified.PublisherID = context.Publishers.Where(x => x.PublisherName == cbxPublisher.Text).First().PublisherID.ToString();
                     bookToBeModified.Price = bookModified.Price;
                     bookToBeModified.Edition = bookModified.Edition;
@@ -189,16 +189,15 @@ namespace SA45Team07B
 
         private void btnAddRFID_Click(object sender, EventArgs e)
         {
-            if (txtbRFID.Text != string.Empty)
+            if (txtbRFID.Text.Trim() != string.Empty)
             {
                 //varify the txtbox with book method
                 using (SA45Team07B_LibraryEntities context = new SA45Team07B.SA45Team07B_LibraryEntities())
                 {
                     if (bookModified.RFIDValidation(txtbRFID, lbxRFID, epModifyBk))
                     {
-                        bookModified.RFIDs.Select(x => x.RFID).ToList().Add(txtbRFID.Text);
-                        lbxRFID.Items.Add(txtbRFID.Text);
-                        MessageBox.Show(lbxRFID.Items.Count.ToString());
+                        bookModified.RFIDs.Select(x => x.RFID).ToList().Add(txtbRFID.Text.Trim());
+                        lbxRFID.Items.Add(txtbRFID.Text.Trim());
                         txtbRFID.Clear();
                     }
                 }
@@ -219,9 +218,9 @@ namespace SA45Team07B
 
         private void txtbBkTitle_Validating(object sender, CancelEventArgs e)
         {
-            if (txtbBkTitle.Text != string.Empty)
+            if (txtbBkTitle.Text.Trim() != string.Empty)
             {
-                bookModified.BookTitle = txtbBkTitle.Text;
+                bookModified.BookTitle = txtbBkTitle.Text.Trim();
                 if (bookFound.BookTitle != bookModified.BookTitle)
                 {
                     if (!bookModified.TitleValidation(txtbBkTitle, epModifyBk))
