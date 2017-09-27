@@ -78,10 +78,6 @@
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.Visible = false;
-            // 
             // lblMemberID
             // 
             this.lblMemberID.AutoSize = true;
@@ -509,7 +505,6 @@
             this.Name = "BorrowForm";
             this.Text = "Borrow Book";
             this.Load += new System.EventHandler(this.BorrowForm_Load);
-            this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.groupBox1, 0);
             this.Controls.SetChildIndex(this.groupBox2, 0);
             this.Controls.SetChildIndex(this.groupBox3, 0);

@@ -72,10 +72,6 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(0, 587);
-            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label1.Visible = false;
-            // 
             // textBoxMemberID
             // 
             this.textBoxMemberID.Location = new System.Drawing.Point(190, 29);
@@ -454,7 +450,6 @@
             this.Text = "Add Member";
             this.Load += new System.EventHandler(this.AddNewMember_Load);
             this.Controls.SetChildIndex(this.groupBox1, 0);
-            this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.statusStrip1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderMemberName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderEmail)).EndInit();

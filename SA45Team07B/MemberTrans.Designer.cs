@@ -90,12 +90,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderForMemberID)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(676, 817);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Visible = false;
-            // 
             // gbMemberInfo
             // 
             this.gbMemberInfo.BackColor = System.Drawing.Color.Transparent;
@@ -719,7 +713,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MemberTrans";
             this.Text = "Member Transaction  - Library Management System SA45Team07B";
-            this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.gbTransactionRecord, 0);
             this.Controls.SetChildIndex(this.btnClose, 0);
             this.Controls.SetChildIndex(this.gbMemberInfo, 0);

@@ -64,12 +64,6 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(0, 399);
-            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label1.Visible = false;
-            // 
             // errorProviderMemberName
             // 
             this.errorProviderMemberName.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
@@ -379,7 +373,6 @@
             this.Name = "ModifyMember";
             this.Text = "Modify Member Information";
             this.Load += new System.EventHandler(this.ModifyMember_Load);
-            this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.groupBox1, 0);
             this.Controls.SetChildIndex(this.statusStrip1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderMemberName)).EndInit();
