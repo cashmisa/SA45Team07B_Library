@@ -79,7 +79,7 @@ namespace SA45Team07B
 
         private void btnFindMember_Click(object sender, EventArgs e)
         {
-            MemberInfo findmbr = new MemberInfo();
+            MemberTrans findmbr = new MemberTrans();
             findmbr.ShowDialog();
         }
     }
