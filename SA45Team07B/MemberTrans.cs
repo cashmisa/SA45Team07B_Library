@@ -236,6 +236,8 @@ namespace SA45Team07B
                                 {
                                     submitsuccessful = false;
                                 }
+
+                                //this.ActiveControl = txtbRemarksOfSelectedTransaction;
                             }
                         }
                     }

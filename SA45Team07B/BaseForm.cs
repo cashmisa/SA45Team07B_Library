@@ -72,10 +72,6 @@ namespace SA45Team07B
 
         private void memberToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this is MemberPopUpSearch)
-            {
-                return;
-            }
             MemberPopUpSearch mempopupsearch = new MemberPopUpSearch();
             mempopupsearch.ShowDialog();
         }
