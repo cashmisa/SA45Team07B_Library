@@ -126,7 +126,7 @@
     <Compile Include="Book.cs">
       <DependentUpon>LibraryManagement.tt</DependentUpon>
     </Compile>
-    <Compile Include="BookAssessmentReport.cs">
+    <Compile Include="Reports\BookAssessmentReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BookAssessmentReport.rpt</DependentUpon>
@@ -193,7 +193,13 @@
     <Compile Include="MemberCategories.cs">
       <DependentUpon>LibraryManagement.tt</DependentUpon>
     </Compile>
-    <Compile Include="MemberDetailReport.cs">
+    <Compile Include="Reports\ChartReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChartReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MemberDetailReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MemberDetailReport.rpt</DependentUpon>
@@ -273,7 +279,7 @@
     <EmbeddedResource Include="BaseModalForm.resx">
       <DependentUpon>BaseModalForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BookAssessmentReport.rpt">
+    <EmbeddedResource Include="Reports\BookAssessmentReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>BookAssessmentReport.cs</LastGenOutput>
     </EmbeddedResource>
@@ -289,7 +295,11 @@
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MemberDetailReport.rpt">
+    <EmbeddedResource Include="Reports\ChartReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ChartReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MemberDetailReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>MemberDetailReport.cs</LastGenOutput>
     </EmbeddedResource>
