@@ -47,7 +47,7 @@ namespace SA45Team07B
 
         private void recordLossToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RecordLost recordlost = new RecordLost();
+            AdjustStock recordlost = new AdjustStock();
             recordlost.ShowDialog();
         }
 
