@@ -61,6 +61,7 @@
             this.toolStripButtonBorrow = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonReturn = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.SuspendLayout();
@@ -258,8 +259,9 @@
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem,
-            this.getHelpToolStripMenuItem});
+            this.getHelpToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(54, 25);
             this.helpToolStripMenuItem.Text = "Help";
@@ -267,14 +269,14 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(140, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // getHelpToolStripMenuItem
             // 
             this.getHelpToolStripMenuItem.Name = "getHelpToolStripMenuItem";
-            this.getHelpToolStripMenuItem.Size = new System.Drawing.Size(140, 26);
+            this.getHelpToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.getHelpToolStripMenuItem.Text = "Get Help";
             this.getHelpToolStripMenuItem.Click += new System.EventHandler(this.getHelpToolStripMenuItem_Click);
             // 
@@ -324,6 +326,11 @@
             this.toolStripButton1.Size = new System.Drawing.Size(103, 25);
             this.toolStripButton1.Text = "Find Book";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
             // BaseForm
             // 
@@ -385,6 +392,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripMenuItem publisherToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem getHelpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     }
 }
 
