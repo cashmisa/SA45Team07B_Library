@@ -101,9 +101,13 @@ namespace SA45Team07B
                 MessageBox.Show(newbook.TotalCopy.ToString());
 
                 //Submission validation
-                if (!this.ValidateChildren() || lbxRFID.Items.Count == 0)
+                if (!this.ValidateChildren())
                 {
                     MessageBox.Show("Not able to add this book. Please refer to individual error message");
+                }
+                else if (lbxRFID.Items.Count == 0)
+                {
+                    epAddBk.SetError(lbxRFID, "Please provide RFID for this book");
                 }
                 else
                 {
