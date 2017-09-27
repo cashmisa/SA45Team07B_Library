@@ -15,7 +15,7 @@ namespace SA45Team07B
         public const int BOOK_ASSESSMENT_REPORT = 0;
         public const int MEMBER_DETAIL_REPORT = 1;
 
-        int reportType = 1;
+        int reportType = 0;
         public ReportForm()
         {
             InitializeComponent();
@@ -31,19 +31,24 @@ namespace SA45Team07B
             WindowState = FormWindowState.Maximized;
 
             LibraryDataSet dataSet = new LibraryDataSet();
-            LibraryDataSetTableAdapters.MemberDetailListTableAdapter memberAdapter = new LibraryDataSetTableAdapters.MemberDetailListTableAdapter();
-            memberAdapter.Fill(dataSet.MemberDetailList);
-
-            MemberDetailReport memberReport = new MemberDetailReport();
-            memberReport.SetDataSource((DataTable)dataSet.MemberDetailList);
-            reportViewer.ReportSource = memberReport;
+            
             switch (reportType)
             {
                 case BOOK_ASSESSMENT_REPORT:
+                    LibraryDataSetTableAdapters.BookAssessmentListTableAdapter bookAdapter = new LibraryDataSetTableAdapters.BookAssessmentListTableAdapter();
+                    bookAdapter.Fill(dataSet.BookAssessmentList);
 
+                    BookAssessmentReport bookReport = new BookAssessmentReport();
+                    bookReport.SetDataSource(dataSet);
+                    reportViewer.ReportSource = bookReport;
                     break;
                 case MEMBER_DETAIL_REPORT:
-                    
+                    LibraryDataSetTableAdapters.MemberDetailListTableAdapter memberAdapter = new LibraryDataSetTableAdapters.MemberDetailListTableAdapter();
+                    memberAdapter.Fill(dataSet.MemberDetailList);
+
+                    MemberDetailReport memberReport = new MemberDetailReport();
+                    memberReport.SetDataSource(dataSet);
+                    reportViewer.ReportSource = memberReport;
                     break;
                 default:
                     break;
