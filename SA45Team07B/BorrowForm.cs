@@ -27,6 +27,7 @@ namespace SA45Team07B
         {
             dpDateIssued.Value = DateTime.Today;
             dpDateDue.Value = DateTime.Today;
+            dpDateIssued.MaxDate = DateTime.Today;
             borrower = null;
             borrowRFIDTag = null;
         }
