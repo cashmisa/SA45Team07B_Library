@@ -27,6 +27,7 @@ namespace SA45Team07B
         {
             dpDateIssued.Value = DateTime.Today;
             dpDateDue.Value = DateTime.Today;
+            dpDateIssued.MaxDate = DateTime.Today;
             borrower = null;
             borrowRFIDTag = null;
         }
@@ -86,7 +87,7 @@ namespace SA45Team07B
 
         private void btnMoreMember_Click(object sender, EventArgs e)
         {
-            MemberPopUpSearch popup = new MemberPopUpSearch();
+            MemberSearchForm popup = new MemberSearchForm();
             popup.ShowDialog();
             if (popup.DialogResult == DialogResult.OK)
             {
@@ -96,7 +97,7 @@ namespace SA45Team07B
 
         private void btnMoreBook_Click(object sender, EventArgs e)
         {
-            BookPopUpSearch bookPopup = new BookPopUpSearch("available");
+            BookSearchForm bookPopup = new BookSearchForm("available");
             bookPopup.ShowDialog();
             if (bookPopup.DialogResult == DialogResult.OK)
             {

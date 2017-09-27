@@ -5,11 +5,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace SA45Team07B
 {
-    public partial class AdjustStock : SA45Team07B.BaseModalForm
+    public partial class AdjustStockForm : SA45Team07B.BaseModalForm
     {
         static string[] REMOVE_REASON_LIST = new string[] { "Lost", "Damaged", "Other" };
         static string[] RESTORE_REASON_LIST = new string[] { "Found", "Replace", "Other" };
@@ -23,7 +24,7 @@ namespace SA45Team07B
             get { return adjustRFID; }
         }
 
-        public AdjustStock()
+        public AdjustStockForm()
         {
             InitializeComponent();
         }
@@ -36,7 +37,7 @@ namespace SA45Team07B
 
         private void btnMoreRFID_Click(object sender, EventArgs e)
         {
-            BookPopUpSearch popup = new BookPopUpSearch();
+            BookSearchForm popup = new BookSearchForm();
             popup.ShowDialog();
             if (popup.DialogResult == DialogResult.OK)
             {
@@ -54,6 +55,11 @@ namespace SA45Team07B
                 MessageBox.Show("No changes");
                 DialogResult = DialogResult.Cancel;
             }
+            else if (!DataService.CheckRFIDAvailability(txtbRFID.Text))
+            {
+                MessageBox.Show("This book is on loan. Please close the transaction", "Warning");
+                return;
+            }
             else
             {
                 adjustRFID = txtbRFID.Text;
@@ -62,7 +68,7 @@ namespace SA45Team07B
                 MessageBox.Show("Update Success!");
                 DialogResult = DialogResult.OK;
             }
-            DialogResult = DialogResult.OK;
+            
             Close();
         }
 

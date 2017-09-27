@@ -27,7 +27,7 @@ namespace SA45Team07B
 
         private void btnSearchRFID_Click(object sender, EventArgs e)
         {
-            using (BookPopUpSearch bps = new BookPopUpSearch("onloan"))
+            using (BookSearchForm bps = new BookSearchForm("onloan"))
             {
                 if (bps.ShowDialog() == DialogResult.OK)
                 {
@@ -110,7 +110,7 @@ namespace SA45Team07B
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if (this.dtpReturnDate.Value >= this.dtpIssueDate.Value)
+            if (this.dtpReturnDate.Value >= this.dtpIssueDate.Value && this.txtbRFID.Text != string.Empty)
             {
                 using(TransactionScope ts = new TransactionScope())
                 {

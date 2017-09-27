@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace SA45Team07B
 {
-    public partial class BookPopUpSearch : Form
+    public partial class BookSearchForm : Form
     {
         private Book bookFound;
         private RFIDTag tagFound;
@@ -59,7 +59,7 @@ namespace SA45Team07B
             }
         }
 
-        public BookPopUpSearch()
+        public BookSearchForm()
         {
             InitializeComponent();
             this.rbtnAll.Checked = true;
@@ -69,7 +69,7 @@ namespace SA45Team07B
         /// "all" "available" "onloan" "discontinued" to activate corresponding radiobutton.
         /// </summary>
         /// <param name="radioButton"></param>
-        public BookPopUpSearch(string radioButton)
+        public BookSearchForm(string radioButton)
         {
             InitializeComponent();
 

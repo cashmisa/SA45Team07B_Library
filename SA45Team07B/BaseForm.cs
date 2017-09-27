@@ -56,38 +56,34 @@ namespace SA45Team07B
 
         private void adjustStockToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AdjustStock adjuststock = new AdjustStock();
+            AdjustStockForm adjuststock = new AdjustStockForm();
             adjuststock.ShowDialog();
         }
 
         private void bookToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this is BookInfo)
+            if (this is BookInfoForm)
             {
                 return;
             }
-            BookInfo bookinfo = new BookInfo();
+            BookInfoForm bookinfo = new BookInfoForm();
             bookinfo.ShowDialog();
         }
 
         private void memberToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this is MemberPopUpSearch)
-            {
-                return;
-            }
-            MemberPopUpSearch mempopupsearch = new MemberPopUpSearch();
+            MemberSearchForm mempopupsearch = new MemberSearchForm();
             mempopupsearch.ShowDialog();
         }
 
         private void addNewToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(this is AddNewBook)
+            if(this is AddNewBookForm)
             {
                 return;
             }
 
-            AddNewBook addnewbook = new AddNewBook();
+            AddNewBookForm addnewbook = new AddNewBookForm();
             addnewbook.ShowDialog();
         }
 
@@ -103,34 +99,34 @@ namespace SA45Team07B
 
         private void addNewToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            if (this is AddNewMember)
+            if (this is AddNewMemberForm)
             {
                 return;
             }
 
-            AddNewMember addnewmember = new AddNewMember();
+            AddNewMemberForm addnewmember = new AddNewMemberForm();
             addnewmember.ShowDialog();
         }
 
         private void modifyInformationToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            if (this is ModifyMember)
+            if (this is ModifyMemberForm)
             {
                 return;
             }
 
-            ModifyMember modifymember = new ModifyMember();
+            ModifyMemberForm modifymember = new ModifyMemberForm();
             modifymember.ShowDialog();
         }
 
         private void publisherToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this is AddNewPublisher)
+            if (this is AddNewPublisherForm)
             {
                 return;
             }
 
-            AddNewPublisher addnewpublisher = new AddNewPublisher();
+            AddNewPublisherForm addnewpublisher = new AddNewPublisherForm();
             addnewpublisher.ShowDialog();
         }
 
@@ -167,11 +163,11 @@ namespace SA45Team07B
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            if (this is BookInfo)
+            if (this is BookInfoForm)
             {
                 return;
             }
-            BookInfo bookinfo = new BookInfo();
+            BookInfoForm bookinfo = new BookInfoForm();
             bookinfo.ShowDialog();
         }
 
@@ -184,6 +180,17 @@ namespace SA45Team07B
         private void memberListToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ReportForm form = new ReportForm(ReportForm.MEMBER_DETAIL_REPORT);
+            form.ShowDialog();
+        }
+
+        private void getHelpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Please approach our friendly Consultant Mr. Venkat at mr.venkat@nus.edu.sg");
+        }
+
+        private void chartReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReportForm form = new ReportForm(ReportForm.CHART_REPORT);
             form.ShowDialog();
         }
     }

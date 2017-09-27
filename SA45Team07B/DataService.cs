@@ -159,5 +159,22 @@ namespace SA45Team07B
             context.SaveChanges();
             return true;
         }
+
+        //true means "in"
+        public static bool CheckRFIDAvailability(string RFID)
+        {
+            SA45Team07B_LibraryEntities context = new SA45Team07B_LibraryEntities();
+            RFIDTag tag = context.RFIDs.Where(x => x.RFID == RFID).First();
+            long? transID = tag.LastTransactionID;
+            IssueTran trans = context.IssueTrans.Where(x => x.TransactionID == transID).First();
+            if (trans.Status == "out")
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
     }
 }

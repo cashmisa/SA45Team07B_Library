@@ -51,9 +51,7 @@
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.memberListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.transactionListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
-            this.crosstabReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chartReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -173,7 +171,7 @@
             this.addNewToolStripMenuItem,
             this.modifyInformationToolStripMenuItem});
             this.bookToolStripMenuItem1.Name = "bookToolStripMenuItem1";
-            this.bookToolStripMenuItem1.Size = new System.Drawing.Size(152, 26);
+            this.bookToolStripMenuItem1.Size = new System.Drawing.Size(145, 26);
             this.bookToolStripMenuItem1.Text = "Book";
             // 
             // addNewToolStripMenuItem
@@ -196,7 +194,7 @@
             this.addNewToolStripMenuItem1,
             this.modifyInformationToolStripMenuItem1});
             this.memberToolStripMenuItem1.Name = "memberToolStripMenuItem1";
-            this.memberToolStripMenuItem1.Size = new System.Drawing.Size(152, 26);
+            this.memberToolStripMenuItem1.Size = new System.Drawing.Size(145, 26);
             this.memberToolStripMenuItem1.Text = "Member";
             // 
             // addNewToolStripMenuItem1
@@ -216,7 +214,7 @@
             // publisherToolStripMenuItem
             // 
             this.publisherToolStripMenuItem.Name = "publisherToolStripMenuItem";
-            this.publisherToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.publisherToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.publisherToolStripMenuItem.Text = "Publisher";
             this.publisherToolStripMenuItem.Click += new System.EventHandler(this.publisherToolStripMenuItem_Click);
             // 
@@ -225,9 +223,7 @@
             this.reportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bookListToolStripMenuItem,
             this.memberListToolStripMenuItem,
-            this.transactionListToolStripMenuItem,
             this.toolStripMenuItem2,
-            this.crosstabReportToolStripMenuItem,
             this.chartReportToolStripMenuItem});
             this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
             this.reportToolStripMenuItem.Size = new System.Drawing.Size(69, 25);
@@ -236,39 +232,28 @@
             // bookListToolStripMenuItem
             // 
             this.bookListToolStripMenuItem.Name = "bookListToolStripMenuItem";
-            this.bookListToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.bookListToolStripMenuItem.Size = new System.Drawing.Size(265, 26);
             this.bookListToolStripMenuItem.Text = "Book Assessment";
             this.bookListToolStripMenuItem.Click += new System.EventHandler(this.bookListToolStripMenuItem_Click);
             // 
             // memberListToolStripMenuItem
             // 
             this.memberListToolStripMenuItem.Name = "memberListToolStripMenuItem";
-            this.memberListToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.memberListToolStripMenuItem.Size = new System.Drawing.Size(265, 26);
             this.memberListToolStripMenuItem.Text = "Member List";
             this.memberListToolStripMenuItem.Click += new System.EventHandler(this.memberListToolStripMenuItem_Click);
-            // 
-            // transactionListToolStripMenuItem
-            // 
-            this.transactionListToolStripMenuItem.Name = "transactionListToolStripMenuItem";
-            this.transactionListToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
-            this.transactionListToolStripMenuItem.Text = "Transaction List";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(198, 6);
-            // 
-            // crosstabReportToolStripMenuItem
-            // 
-            this.crosstabReportToolStripMenuItem.Name = "crosstabReportToolStripMenuItem";
-            this.crosstabReportToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
-            this.crosstabReportToolStripMenuItem.Text = "[cross-tab report]";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(262, 6);
             // 
             // chartReportToolStripMenuItem
             // 
             this.chartReportToolStripMenuItem.Name = "chartReportToolStripMenuItem";
-            this.chartReportToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
-            this.chartReportToolStripMenuItem.Text = "[chart report]";
+            this.chartReportToolStripMenuItem.Size = new System.Drawing.Size(265, 26);
+            this.chartReportToolStripMenuItem.Text = "Subject Category Pie Chart";
+            this.chartReportToolStripMenuItem.Click += new System.EventHandler(this.chartReportToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -291,6 +276,7 @@
             this.getHelpToolStripMenuItem.Name = "getHelpToolStripMenuItem";
             this.getHelpToolStripMenuItem.Size = new System.Drawing.Size(140, 26);
             this.getHelpToolStripMenuItem.Text = "Get Help";
+            this.getHelpToolStripMenuItem.Click += new System.EventHandler(this.getHelpToolStripMenuItem_Click);
             // 
             // notifyIconLibraryManagement
             // 
@@ -389,9 +375,7 @@
         private System.Windows.Forms.ToolStripMenuItem modifyInformationToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem bookListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem memberListToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem transactionListToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem crosstabReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem chartReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.NotifyIcon notifyIconLibraryManagement;

@@ -87,29 +87,29 @@
     <Compile Include="AboutBox.Designer.cs">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddNewBook.cs">
+    <Compile Include="AddNewBookForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddNewBook.Designer.cs">
-      <DependentUpon>AddNewBook.cs</DependentUpon>
+    <Compile Include="AddNewBookForm.Designer.cs">
+      <DependentUpon>AddNewBookForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddNewMember.cs">
+    <Compile Include="AddNewMemberForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddNewMember.Designer.cs">
-      <DependentUpon>AddNewMember.cs</DependentUpon>
+    <Compile Include="AddNewMemberForm.Designer.cs">
+      <DependentUpon>AddNewMemberForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddNewPublisher.cs">
+    <Compile Include="AddNewPublisherForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddNewPublisher.Designer.cs">
-      <DependentUpon>AddNewPublisher.cs</DependentUpon>
+    <Compile Include="AddNewPublisherForm.Designer.cs">
+      <DependentUpon>AddNewPublisherForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdjustStock.cs">
+    <Compile Include="AdjustStockForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdjustStock.Designer.cs">
-      <DependentUpon>AdjustStock.cs</DependentUpon>
+    <Compile Include="AdjustStockForm.Designer.cs">
+      <DependentUpon>AdjustStockForm.cs</DependentUpon>
     </Compile>
     <Compile Include="BaseForm.cs">
       <SubType>Form</SubType>
@@ -126,23 +126,23 @@
     <Compile Include="Book.cs">
       <DependentUpon>LibraryManagement.tt</DependentUpon>
     </Compile>
-    <Compile Include="BookAssessmentReport.cs">
+    <Compile Include="Reports\BookAssessmentReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BookAssessmentReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="BookInfo.cs">
+    <Compile Include="BookInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BookInfo.Designer.cs">
-      <DependentUpon>BookInfo.cs</DependentUpon>
+    <Compile Include="BookInfoForm.Designer.cs">
+      <DependentUpon>BookInfoForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="BookPopUpSearch.cs">
+    <Compile Include="BookSearchForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BookPopUpSearch.Designer.cs">
-      <DependentUpon>BookPopUpSearch.cs</DependentUpon>
+    <Compile Include="BookSearchForm.Designer.cs">
+      <DependentUpon>BookSearchForm.cs</DependentUpon>
     </Compile>
     <Compile Include="BookSubject.cs">
       <DependentUpon>LibraryManagement.tt</DependentUpon>
@@ -163,18 +163,6 @@
     <Compile Include="DataService.cs" />
     <Compile Include="Faculty.cs">
       <DependentUpon>LibraryManagement.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="IssueTran.cs">
       <DependentUpon>LibraryManagement.tt</DependentUpon>
@@ -205,35 +193,41 @@
     <Compile Include="MemberCategories.cs">
       <DependentUpon>LibraryManagement.tt</DependentUpon>
     </Compile>
-    <Compile Include="MemberDetailReport.cs">
+    <Compile Include="Reports\ChartReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChartReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MemberDetailReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MemberDetailReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="MemberPopUpSearchcs.cs">
+    <Compile Include="MemberSearchForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MemberPopUpSearchcs.Designer.cs">
-      <DependentUpon>MemberPopUpSearchcs.cs</DependentUpon>
+    <Compile Include="MemberSearchForm.Designer.cs">
+      <DependentUpon>MemberSearchForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MemberTrans.cs">
+    <Compile Include="MemberTransForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MemberTrans.Designer.cs">
-      <DependentUpon>MemberTrans.cs</DependentUpon>
+    <Compile Include="MemberTransForm.Designer.cs">
+      <DependentUpon>MemberTransForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModifyBook.cs">
+    <Compile Include="ModifyBookForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModifyBook.Designer.cs">
-      <DependentUpon>ModifyBook.cs</DependentUpon>
+    <Compile Include="ModifyBookForm.Designer.cs">
+      <DependentUpon>ModifyBookForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModifyMember.cs">
+    <Compile Include="ModifyMemberForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModifyMember.Designer.cs">
-      <DependentUpon>ModifyMember.cs</DependentUpon>
+    <Compile Include="ModifyMemberForm.Designer.cs">
+      <DependentUpon>ModifyMemberForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -266,17 +260,17 @@
     <EmbeddedResource Include="AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddNewBook.resx">
-      <DependentUpon>AddNewBook.cs</DependentUpon>
+    <EmbeddedResource Include="AddNewBookForm.resx">
+      <DependentUpon>AddNewBookForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddNewMember.resx">
-      <DependentUpon>AddNewMember.cs</DependentUpon>
+    <EmbeddedResource Include="AddNewMemberForm.resx">
+      <DependentUpon>AddNewMemberForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddNewPublisher.resx">
-      <DependentUpon>AddNewPublisher.cs</DependentUpon>
+    <EmbeddedResource Include="AddNewPublisherForm.resx">
+      <DependentUpon>AddNewPublisherForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdjustStock.resx">
-      <DependentUpon>AdjustStock.cs</DependentUpon>
+    <EmbeddedResource Include="AdjustStockForm.resx">
+      <DependentUpon>AdjustStockForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
@@ -285,15 +279,15 @@
     <EmbeddedResource Include="BaseModalForm.resx">
       <DependentUpon>BaseModalForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BookAssessmentReport.rpt">
+    <EmbeddedResource Include="Reports\BookAssessmentReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>BookAssessmentReport.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="BookInfo.resx">
-      <DependentUpon>BookInfo.cs</DependentUpon>
+    <EmbeddedResource Include="BookInfoForm.resx">
+      <DependentUpon>BookInfoForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BookPopUpSearch.resx">
-      <DependentUpon>BookPopUpSearch.cs</DependentUpon>
+    <EmbeddedResource Include="BookSearchForm.resx">
+      <DependentUpon>BookSearchForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BorrowForm.resx">
       <DependentUpon>BorrowForm.cs</DependentUpon>
@@ -301,21 +295,25 @@
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MemberDetailReport.rpt">
+    <EmbeddedResource Include="Reports\ChartReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ChartReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MemberDetailReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>MemberDetailReport.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="MemberPopUpSearchcs.resx">
-      <DependentUpon>MemberPopUpSearchcs.cs</DependentUpon>
+    <EmbeddedResource Include="MemberSearchForm.resx">
+      <DependentUpon>MemberSearchForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MemberTrans.resx">
-      <DependentUpon>MemberTrans.cs</DependentUpon>
+    <EmbeddedResource Include="MemberTransForm.resx">
+      <DependentUpon>MemberTransForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModifyBook.resx">
-      <DependentUpon>ModifyBook.cs</DependentUpon>
+    <EmbeddedResource Include="ModifyBookForm.resx">
+      <DependentUpon>ModifyBookForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModifyMember.resx">
-      <DependentUpon>ModifyMember.cs</DependentUpon>
+    <EmbeddedResource Include="ModifyMemberForm.resx">
+      <DependentUpon>ModifyMemberForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

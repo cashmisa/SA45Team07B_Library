@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace SA45Team07B
 {
-    public partial class MemberPopUpSearch : Form
+    public partial class MemberSearchForm : Form
     {
 
         private Member memberFound;
@@ -43,7 +43,7 @@ namespace SA45Team07B
             }
         }
 
-        public MemberPopUpSearch()
+        public MemberSearchForm()
         {
             InitializeComponent();
         }

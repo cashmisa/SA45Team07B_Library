@@ -49,7 +49,7 @@ namespace SA45Team07B
 
         private void btnAddBooks_Click(object sender, EventArgs e)
         {
-            AddNewBook addbk = new AddNewBook();
+            AddNewBookForm addbk = new AddNewBookForm();
             addbk.ShowDialog();
         }
 
@@ -61,25 +61,25 @@ namespace SA45Team07B
 
         private void btnFindBk_Click(object sender, EventArgs e)
         {
-            BookInfo findbk = new BookInfo();
+            BookInfoForm findbk = new BookInfoForm();
             findbk.ShowDialog();
         }
 
         private void btnAddMember_Click(object sender, EventArgs e)
         {
-            AddNewMember addmbr = new AddNewMember();
+            AddNewMemberForm addmbr = new AddNewMemberForm();
             addmbr.ShowDialog();
         }
 
         private void btnModifyMember_Click(object sender, EventArgs e)
         {
-            ModifyMember modifymbr = new ModifyMember();
+            ModifyMemberForm modifymbr = new ModifyMemberForm();
             modifymbr.ShowDialog();
         }
 
         private void btnFindMember_Click(object sender, EventArgs e)
         {
-            MemberTrans findmbr = new MemberTrans();
+            MemberTransForm findmbr = new MemberTransForm();
             findmbr.ShowDialog();
         }
     }

@@ -10,9 +10,7 @@ using System.Windows.Forms;
 
 namespace SA45Team07B
 {
-
-
-    public partial class MemberTrans : SA45Team07B.BaseForm
+    public partial class MemberTransForm : SA45Team07B.BaseForm
     {
         private Member memberFound;
         private MemberCategories memberTypeOfMemberFound;
@@ -20,16 +18,16 @@ namespace SA45Team07B
         private List<IssueTran> onLoanTransactionRecords;
         private List<IssueTran> returnedTransactionRecords;
 
-        private bool? submitsuccessful;
+        private bool? submitSuccessful;
 
-        public MemberTrans()
+        public MemberTransForm()
         {
             InitializeComponent();
         }
 
         private void btnSearchMember_Click(object sender, EventArgs e)
         {
-            using (MemberPopUpSearch mps = new MemberPopUpSearch())
+            using (MemberSearchForm mps = new MemberSearchForm())
             {
                 if (mps.ShowDialog() == DialogResult.OK)
                 {
@@ -230,12 +228,14 @@ namespace SA45Team07B
 
                                 if (i > 0)
                                 {
-                                    submitsuccessful = true;
+                                    submitSuccessful = true;
                                 }
                                 else
                                 {
-                                    submitsuccessful = false;
+                                    submitSuccessful = false;
                                 }
+
+                                this.ActiveControl = txtbRemarksOfSelectedTransaction;
                             }
                         }
                     }
@@ -297,15 +297,15 @@ namespace SA45Team07B
                     txtbRemarksOfSelectedTransaction.Text = string.Empty;
                 }
 
-                if (submitsuccessful == true)
+                if (submitSuccessful == true)
                 {
                     toolStripStatusLabel1.Text = "Remarks has been submitted.";
-                    submitsuccessful = null;
+                    submitSuccessful = null;
                 }
-                else if(submitsuccessful == false)
+                else if(submitSuccessful == false)
                 {
                     toolStripStatusLabel1.Text = "No change.";
-                    submitsuccessful = null;
+                    submitSuccessful = null;
                 }
                 else
                 {

@@ -5,7 +5,7 @@
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        protected System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -25,7 +25,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        protected void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutBox));
             this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
@@ -140,7 +140,8 @@
             this.textBoxDescription.Size = new System.Drawing.Size(279, 124);
             this.textBoxDescription.TabIndex = 23;
             this.textBoxDescription.TabStop = false;
-            this.textBoxDescription.Text = "A product by Team 7B of class System Analysis 45, ISS - NUS.";
+            this.textBoxDescription.Text = "A product by Team 7B of class System Analysis 45, ISS - NUS. \r\nIncluding:\r\n- Tang" +
+    " Xiaowen\r\n- Ong Xin Ying\r\n- Tan Chun Ket\r\n- Ton That Minh Nhat";
             // 
             // okButton
             // 
@@ -167,7 +168,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AboutBox";
-            this.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.Padding = new System.Windows.Forms.Padding(10);
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -180,14 +181,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel;
-        private System.Windows.Forms.PictureBox logoPictureBox;
-        private System.Windows.Forms.Label labelProductName;
-        private System.Windows.Forms.Label labelVersion;
-        private System.Windows.Forms.Label labelCopyright;
-        private System.Windows.Forms.Label labelCompanyName;
-        private System.Windows.Forms.TextBox textBoxDescription;
-        private System.Windows.Forms.Button okButton;
+        protected System.Windows.Forms.PictureBox logoPictureBox;
+        protected System.Windows.Forms.Label labelProductName;
+        protected System.Windows.Forms.Label labelVersion;
+        protected System.Windows.Forms.Label labelCopyright;
+        protected System.Windows.Forms.Label labelCompanyName;
+        protected System.Windows.Forms.Button okButton;
+        protected System.Windows.Forms.TableLayoutPanel tableLayoutPanel;
+        public System.Windows.Forms.TextBox textBoxDescription;
     }
 }

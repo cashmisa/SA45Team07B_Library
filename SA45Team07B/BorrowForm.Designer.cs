@@ -96,7 +96,7 @@
             this.btnSubmit.Location = new System.Drawing.Point(190, 353);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(75, 45);
-            this.btnSubmit.TabIndex = 31;
+            this.btnSubmit.TabIndex = 5;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
@@ -111,7 +111,7 @@
             this.btnMoreMember.Location = new System.Drawing.Point(229, 76);
             this.btnMoreMember.Name = "btnMoreMember";
             this.btnMoreMember.Size = new System.Drawing.Size(29, 29);
-            this.btnMoreMember.TabIndex = 16;
+            this.btnMoreMember.TabIndex = 2;
             this.btnMoreMember.Text = "...";
             this.btnMoreMember.UseVisualStyleBackColor = false;
             this.btnMoreMember.Click += new System.EventHandler(this.btnMoreMember_Click);
@@ -130,7 +130,7 @@
             this.groupBox1.Location = new System.Drawing.Point(641, 78);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(292, 422);
-            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Book Information";
             // 
@@ -140,7 +140,7 @@
             this.txtbBookStatus.Name = "txtbBookStatus";
             this.txtbBookStatus.ReadOnly = true;
             this.txtbBookStatus.Size = new System.Drawing.Size(229, 29);
-            this.txtbBookStatus.TabIndex = 30;
+            this.txtbBookStatus.TabIndex = 4;
             this.txtbBookStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblBookStatus
@@ -158,7 +158,7 @@
             this.txtbBookTitle.Name = "txtbBookTitle";
             this.txtbBookTitle.ReadOnly = true;
             this.txtbBookTitle.Size = new System.Drawing.Size(230, 29);
-            this.txtbBookTitle.TabIndex = 29;
+            this.txtbBookTitle.TabIndex = 3;
             // 
             // lblBookTitle
             // 
@@ -179,7 +179,7 @@
             this.btnMoreBook.Location = new System.Drawing.Point(236, 75);
             this.btnMoreBook.Name = "btnMoreBook";
             this.btnMoreBook.Size = new System.Drawing.Size(29, 29);
-            this.btnMoreBook.TabIndex = 28;
+            this.btnMoreBook.TabIndex = 2;
             this.btnMoreBook.Text = "...";
             this.btnMoreBook.UseVisualStyleBackColor = false;
             this.btnMoreBook.Click += new System.EventHandler(this.btnMoreBook_Click);
@@ -187,10 +187,10 @@
             // txtbRFID
             // 
             this.txtbRFID.Location = new System.Drawing.Point(35, 75);
-            this.txtbRFID.MaxLength = 10;
+            this.txtbRFID.MaxLength = 1;
             this.txtbRFID.Name = "txtbRFID";
             this.txtbRFID.Size = new System.Drawing.Size(180, 29);
-            this.txtbRFID.TabIndex = 27;
+            this.txtbRFID.TabIndex = 1;
             this.txtbRFID.TextChanged += new System.EventHandler(this.txtbRFID_TextChanged);
             // 
             // lblRFID
@@ -217,7 +217,7 @@
             this.groupBox2.Location = new System.Drawing.Point(326, 78);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(288, 177);
-            this.groupBox2.TabIndex = 17;
+            this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Borrowing Information";
             // 
@@ -232,6 +232,7 @@
             // 
             // txtbEntitlement
             // 
+            this.txtbEntitlement.Enabled = false;
             this.txtbEntitlement.Location = new System.Drawing.Point(154, 120);
             this.txtbEntitlement.Name = "txtbEntitlement";
             this.txtbEntitlement.ReadOnly = true;
@@ -264,6 +265,7 @@
             this.txtbStatus.ReadOnly = true;
             this.txtbStatus.Size = new System.Drawing.Size(90, 29);
             this.txtbStatus.TabIndex = 22;
+            this.txtbStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblStatus
             // 
@@ -316,7 +318,7 @@
             this.txtbName.Name = "txtbName";
             this.txtbName.ReadOnly = true;
             this.txtbName.Size = new System.Drawing.Size(230, 29);
-            this.txtbName.TabIndex = 17;
+            this.txtbName.TabIndex = 3;
             // 
             // groupBox3
             // 
@@ -331,7 +333,7 @@
             this.groupBox3.Location = new System.Drawing.Point(12, 78);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(292, 422);
-            this.groupBox3.TabIndex = 18;
+            this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Member Information";
             // 
@@ -341,7 +343,7 @@
             this.txtbMemberID.MaxLength = 5;
             this.txtbMemberID.Name = "txtbMemberID";
             this.txtbMemberID.Size = new System.Drawing.Size(180, 29);
-            this.txtbMemberID.TabIndex = 15;
+            this.txtbMemberID.TabIndex = 1;
             this.txtbMemberID.TextChanged += new System.EventHandler(this.txtbMemberID_TextChanged);
             this.txtbMemberID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbMemberID_KeyPress);
             // 
@@ -351,7 +353,7 @@
             this.txtbFaculty.Name = "txtbFaculty";
             this.txtbFaculty.ReadOnly = true;
             this.txtbFaculty.Size = new System.Drawing.Size(230, 29);
-            this.txtbFaculty.TabIndex = 18;
+            this.txtbFaculty.TabIndex = 4;
             // 
             // lblFaculty
             // 
@@ -380,7 +382,7 @@
             this.groupBox4.Location = new System.Drawing.Point(326, 270);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(288, 230);
-            this.groupBox4.TabIndex = 18;
+            this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Date Information";
             // 
