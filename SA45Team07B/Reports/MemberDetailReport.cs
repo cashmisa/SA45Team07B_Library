@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SA45Team07B {
+namespace SA45Team07B.Reports {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -16,14 +16,14 @@ namespace SA45Team07B {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class BookAssessmentReport : ReportClass {
+    public class MemberDetailReport : ReportClass {
         
-        public BookAssessmentReport() {
+        public MemberDetailReport() {
         }
         
         public override string ResourceName {
             get {
-                return "BookAssessmentReport.rpt";
+                return "MemberDetailReport.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace SA45Team07B {
         
         public override string FullResourceName {
             get {
-                return "SA45Team07B.BookAssessmentReport.rpt";
+                return "SA45Team07B.Reports.MemberDetailReport.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace SA45Team07B {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedBookAssessmentReport : Component, ICachedReport {
+    public class CachedMemberDetailReport : Component, ICachedReport {
         
-        public CachedBookAssessmentReport() {
+        public CachedMemberDetailReport() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace SA45Team07B {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            BookAssessmentReport rpt = new BookAssessmentReport();
+            MemberDetailReport rpt = new MemberDetailReport();
             rpt.Site = this.Site;
             return rpt;
         }

@@ -237,6 +237,7 @@
             // 
             // txtbEntitlement
             // 
+            this.txtbEntitlement.Enabled = false;
             this.txtbEntitlement.Location = new System.Drawing.Point(154, 120);
             this.txtbEntitlement.Name = "txtbEntitlement";
             this.txtbEntitlement.ReadOnly = true;
@@ -269,6 +270,7 @@
             this.txtbStatus.ReadOnly = true;
             this.txtbStatus.Size = new System.Drawing.Size(90, 29);
             this.txtbStatus.TabIndex = 22;
+            this.txtbStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblStatus
             // 
@@ -505,7 +507,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BorrowForm";
             this.Text = "Borrow Book";
             this.Load += new System.EventHandler(this.BorrowForm_Load);

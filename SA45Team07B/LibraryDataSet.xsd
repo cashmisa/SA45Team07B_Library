@@ -51,6 +51,23 @@
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BooksBySubjectTableAdapter" GeneratorDataComponentClassName="BooksBySubjectTableAdapter" Name="BooksBySubject" UserDataComponentName="BooksBySubjectTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SA45Team07B_LibraryConnectionString (Settings)" DbObjectName="SA45Team07B_Library.dbo.BooksBySubject" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT SubjectName, [Total Copies] FROM dbo.BooksBySubject</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SubjectName" DataSetColumn="SubjectName" />
+              <Mapping SourceColumn="Total Copies" DataSetColumn="Total Copies" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -59,7 +76,7 @@
   <xs:element name="LibraryDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="LibraryDataSet" msprop:Generator_UserDSName="LibraryDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="MemberDetailList" msprop:Generator_TableClassName="MemberDetailListDataTable" msprop:Generator_TableVarName="tableMemberDetailList" msprop:Generator_RowChangedName="MemberDetailListRowChanged" msprop:Generator_TablePropName="MemberDetailList" msprop:Generator_RowDeletingName="MemberDetailListRowDeleting" msprop:Generator_RowChangingName="MemberDetailListRowChanging" msprop:Generator_RowEvHandlerName="MemberDetailListRowChangeEventHandler" msprop:Generator_RowDeletedName="MemberDetailListRowDeleted" msprop:Generator_RowClassName="MemberDetailListRow" msprop:Generator_UserTableName="MemberDetailList" msprop:Generator_RowEvArgName="MemberDetailListRowChangeEvent">
+        <xs:element name="MemberDetailList" msprop:Generator_TableClassName="MemberDetailListDataTable" msprop:Generator_TableVarName="tableMemberDetailList" msprop:Generator_TablePropName="MemberDetailList" msprop:Generator_RowDeletingName="MemberDetailListRowDeleting" msprop:Generator_RowChangingName="MemberDetailListRowChanging" msprop:Generator_RowEvHandlerName="MemberDetailListRowChangeEventHandler" msprop:Generator_RowDeletedName="MemberDetailListRowDeleted" msprop:Generator_UserTableName="MemberDetailList" msprop:Generator_RowChangedName="MemberDetailListRowChanged" msprop:Generator_RowEvArgName="MemberDetailListRowChangeEvent" msprop:Generator_RowClassName="MemberDetailListRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Member_x0020_ID" msprop:Generator_ColumnVarNameInTable="columnMember_ID" msprop:Generator_ColumnPropNameInRow="Member_ID" msprop:Generator_ColumnPropNameInTable="Member_IDColumn" msprop:Generator_UserColumnName="Member ID" type="xs:long" />
@@ -108,7 +125,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="BookAssessmentList" msprop:Generator_TableClassName="BookAssessmentListDataTable" msprop:Generator_TableVarName="tableBookAssessmentList" msprop:Generator_RowChangedName="BookAssessmentListRowChanged" msprop:Generator_TablePropName="BookAssessmentList" msprop:Generator_RowDeletingName="BookAssessmentListRowDeleting" msprop:Generator_RowChangingName="BookAssessmentListRowChanging" msprop:Generator_RowEvHandlerName="BookAssessmentListRowChangeEventHandler" msprop:Generator_RowDeletedName="BookAssessmentListRowDeleted" msprop:Generator_RowClassName="BookAssessmentListRow" msprop:Generator_UserTableName="BookAssessmentList" msprop:Generator_RowEvArgName="BookAssessmentListRowChangeEvent">
+        <xs:element name="BookAssessmentList" msprop:Generator_TableClassName="BookAssessmentListDataTable" msprop:Generator_TableVarName="tableBookAssessmentList" msprop:Generator_TablePropName="BookAssessmentList" msprop:Generator_RowDeletingName="BookAssessmentListRowDeleting" msprop:Generator_RowChangingName="BookAssessmentListRowChanging" msprop:Generator_RowEvHandlerName="BookAssessmentListRowChangeEventHandler" msprop:Generator_RowDeletedName="BookAssessmentListRowDeleted" msprop:Generator_UserTableName="BookAssessmentList" msprop:Generator_RowChangedName="BookAssessmentListRowChanged" msprop:Generator_RowEvArgName="BookAssessmentListRowChangeEvent" msprop:Generator_RowClassName="BookAssessmentListRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Call_x0020_Number" msprop:Generator_ColumnVarNameInTable="columnCall_Number" msprop:Generator_ColumnPropNameInRow="Call_Number" msprop:Generator_ColumnPropNameInTable="Call_NumberColumn" msprop:Generator_UserColumnName="Call Number">
@@ -148,6 +165,20 @@
               </xs:element>
               <xs:element name="Total_x0020_copies" msprop:Generator_ColumnVarNameInTable="columnTotal_copies" msprop:Generator_ColumnPropNameInRow="Total_copies" msprop:Generator_ColumnPropNameInTable="Total_copiesColumn" msprop:Generator_UserColumnName="Total copies" type="xs:short" />
               <xs:element name="Available" msprop:Generator_ColumnVarNameInTable="columnAvailable" msprop:Generator_ColumnPropNameInRow="Available" msprop:Generator_ColumnPropNameInTable="AvailableColumn" msprop:Generator_UserColumnName="Available" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BooksBySubject" msprop:Generator_TableClassName="BooksBySubjectDataTable" msprop:Generator_TableVarName="tableBooksBySubject" msprop:Generator_TablePropName="BooksBySubject" msprop:Generator_RowDeletingName="BooksBySubjectRowDeleting" msprop:Generator_RowChangingName="BooksBySubjectRowChanging" msprop:Generator_RowEvHandlerName="BooksBySubjectRowChangeEventHandler" msprop:Generator_RowDeletedName="BooksBySubjectRowDeleted" msprop:Generator_UserTableName="BooksBySubject" msprop:Generator_RowChangedName="BooksBySubjectRowChanged" msprop:Generator_RowEvArgName="BooksBySubjectRowChangeEvent" msprop:Generator_RowClassName="BooksBySubjectRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SubjectName" msprop:Generator_ColumnVarNameInTable="columnSubjectName" msprop:Generator_ColumnPropNameInRow="SubjectName" msprop:Generator_ColumnPropNameInTable="SubjectNameColumn" msprop:Generator_UserColumnName="SubjectName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Total_x0020_Copies" msprop:Generator_ColumnVarNameInTable="columnTotal_Copies" msprop:Generator_ColumnPropNameInRow="Total_Copies" msprop:Generator_ColumnPropNameInTable="Total_CopiesColumn" msprop:Generator_UserColumnName="Total Copies" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
