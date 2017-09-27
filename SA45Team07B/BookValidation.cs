@@ -151,7 +151,7 @@ namespace SA45Team07B
         {
             using (SA45Team07B_LibraryEntities context = new SA45Team07B_LibraryEntities())
             {
-                if (txtb.Text.Length < 10)
+                if (txtb.Text.Length < 9 || txtb.Text.Length >10)
                 {
                     ep.SetError(txtb, "Invalid RFID");
                     return false;

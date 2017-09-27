@@ -121,20 +121,28 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(681, 671);
+            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnCancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Location = new System.Drawing.Point(622, 602);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(82, 31);
-            this.btnCancel.TabIndex = 17;
+            this.btnCancel.Size = new System.Drawing.Size(92, 40);
+            this.btnCancel.TabIndex = 21;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(438, 671);
+            this.btnSubmit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSubmit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnSubmit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmit.Location = new System.Drawing.Point(369, 602);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(126, 31);
-            this.btnSubmit.TabIndex = 16;
+            this.btnSubmit.Size = new System.Drawing.Size(124, 40);
+            this.btnSubmit.TabIndex = 20;
             this.btnSubmit.Text = "Save Changes";
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
@@ -145,7 +153,7 @@
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Red;
-            this.label19.Location = new System.Drawing.Point(736, 334);
+            this.label19.Location = new System.Drawing.Point(645, 203);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(12, 13);
             this.label19.TabIndex = 83;
@@ -203,7 +211,7 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Red;
-            this.label15.Location = new System.Drawing.Point(243, 334);
+            this.label15.Location = new System.Drawing.Point(153, 203);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(12, 13);
             this.label15.TabIndex = 77;
@@ -215,7 +223,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(242, 237);
+            this.label11.Location = new System.Drawing.Point(152, 106);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(12, 13);
             this.label11.TabIndex = 76;
@@ -254,7 +262,7 @@
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.BackColor = System.Drawing.Color.Transparent;
-            this.lblPrice.Location = new System.Drawing.Point(41, 291);
+            this.lblPrice.Location = new System.Drawing.Point(38, 289);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(47, 21);
             this.lblPrice.TabIndex = 70;
@@ -282,7 +290,7 @@
             // 
             this.lblPublisher.AutoSize = true;
             this.lblPublisher.BackColor = System.Drawing.Color.Transparent;
-            this.lblPublisher.Location = new System.Drawing.Point(41, 199);
+            this.lblPublisher.Location = new System.Drawing.Point(38, 199);
             this.lblPublisher.Name = "lblPublisher";
             this.lblPublisher.Size = new System.Drawing.Size(78, 21);
             this.lblPublisher.TabIndex = 67;
@@ -292,7 +300,7 @@
             // 
             this.lblSubjectName.AutoSize = true;
             this.lblSubjectName.BackColor = System.Drawing.Color.Transparent;
-            this.lblSubjectName.Location = new System.Drawing.Point(620, 328);
+            this.lblSubjectName.Location = new System.Drawing.Point(529, 197);
             this.lblSubjectName.Name = "lblSubjectName";
             this.lblSubjectName.Size = new System.Drawing.Size(110, 21);
             this.lblSubjectName.TabIndex = 66;
@@ -302,7 +310,7 @@
             // 
             this.lblCallNum.AutoSize = true;
             this.lblCallNum.BackColor = System.Drawing.Color.Transparent;
-            this.lblCallNum.Location = new System.Drawing.Point(41, 245);
+            this.lblCallNum.Location = new System.Drawing.Point(38, 245);
             this.lblCallNum.Name = "lblCallNum";
             this.lblCallNum.Size = new System.Drawing.Size(101, 21);
             this.lblCallNum.TabIndex = 65;
@@ -320,7 +328,7 @@
             // 
             this.lblAuthor.AutoSize = true;
             this.lblAuthor.BackColor = System.Drawing.Color.Transparent;
-            this.lblAuthor.Location = new System.Drawing.Point(40, 150);
+            this.lblAuthor.Location = new System.Drawing.Point(38, 150);
             this.lblAuthor.Name = "lblAuthor";
             this.lblAuthor.Size = new System.Drawing.Size(61, 21);
             this.lblAuthor.TabIndex = 63;
@@ -365,7 +373,7 @@
             // 
             this.lblBkId.AutoSize = true;
             this.lblBkId.BackColor = System.Drawing.Color.Transparent;
-            this.lblBkId.Location = new System.Drawing.Point(129, 188);
+            this.lblBkId.Location = new System.Drawing.Point(38, 59);
             this.lblBkId.Name = "lblBkId";
             this.lblBkId.Size = new System.Drawing.Size(63, 21);
             this.lblBkId.TabIndex = 58;
@@ -383,6 +391,8 @@
             // 
             this.btnFindBk.BackColor = System.Drawing.Color.White;
             this.btnFindBk.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnFindBk.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnFindBk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnFindBk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFindBk.Location = new System.Drawing.Point(377, 56);
             this.btnFindBk.Name = "btnFindBk";
@@ -418,9 +428,14 @@
             this.gbxBasicInfo.Controls.Add(this.cbxSubjectName);
             this.gbxBasicInfo.Controls.Add(this.mtbISBN);
             this.gbxBasicInfo.Controls.Add(this.cbxPublisher);
+            this.gbxBasicInfo.Controls.Add(this.lblBkId);
+            this.gbxBasicInfo.Controls.Add(this.label15);
+            this.gbxBasicInfo.Controls.Add(this.label11);
+            this.gbxBasicInfo.Controls.Add(this.label19);
             this.gbxBasicInfo.Controls.Add(this.lblISBN);
             this.gbxBasicInfo.Controls.Add(this.mtbYear);
             this.gbxBasicInfo.Controls.Add(this.label14);
+            this.gbxBasicInfo.Controls.Add(this.lblSubjectName);
             this.gbxBasicInfo.Controls.Add(this.btnFindBk);
             this.gbxBasicInfo.Controls.Add(this.txtbBkId);
             this.gbxBasicInfo.Controls.Add(this.lblCompul1);
@@ -438,7 +453,7 @@
             this.gbxBasicInfo.Controls.Add(this.lblPrice);
             this.gbxBasicInfo.Controls.Add(this.txtbCallNum);
             this.gbxBasicInfo.Controls.Add(this.txtbPrice);
-            this.gbxBasicInfo.Location = new System.Drawing.Point(91, 129);
+            this.gbxBasicInfo.Location = new System.Drawing.Point(22, 81);
             this.gbxBasicInfo.Name = "gbxBasicInfo";
             this.gbxBasicInfo.Size = new System.Drawing.Size(1045, 343);
             this.gbxBasicInfo.TabIndex = 95;
@@ -453,7 +468,7 @@
             this.gbxRFID.Controls.Add(this.lblRFID);
             this.gbxRFID.Controls.Add(this.lbxRFID);
             this.gbxRFID.Controls.Add(this.btnAddRFID);
-            this.gbxRFID.Location = new System.Drawing.Point(92, 499);
+            this.gbxRFID.Location = new System.Drawing.Point(22, 430);
             this.gbxRFID.Name = "gbxRFID";
             this.gbxRFID.Size = new System.Drawing.Size(1044, 135);
             this.gbxRFID.TabIndex = 96;
@@ -467,7 +482,7 @@
             this.btnUndo.Location = new System.Drawing.Point(973, 54);
             this.btnUndo.Name = "btnUndo";
             this.btnUndo.Size = new System.Drawing.Size(31, 32);
-            this.btnUndo.TabIndex = 70;
+            this.btnUndo.TabIndex = 16;
             this.btnUndo.UseVisualStyleBackColor = true;
             this.btnUndo.Click += new System.EventHandler(this.btnUndo_Click);
             // 
@@ -483,25 +498,15 @@
             // ModifyBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
-            this.ClientSize = new System.Drawing.Size(1276, 773);
+            this.ClientSize = new System.Drawing.Size(1084, 661);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.lblSubjectName);
-            this.Controls.Add(this.lblBkId);
             this.Controls.Add(this.gbxBasicInfo);
             this.Controls.Add(this.gbxRFID);
             this.Name = "ModifyBook";
             this.Text = "Modify Books";
             this.Controls.SetChildIndex(this.gbxRFID, 0);
             this.Controls.SetChildIndex(this.gbxBasicInfo, 0);
-            this.Controls.SetChildIndex(this.lblBkId, 0);
-            this.Controls.SetChildIndex(this.lblSubjectName, 0);
-            this.Controls.SetChildIndex(this.label11, 0);
-            this.Controls.SetChildIndex(this.label15, 0);
-            this.Controls.SetChildIndex(this.label19, 0);
             this.Controls.SetChildIndex(this.btnSubmit, 0);
             this.Controls.SetChildIndex(this.btnCancel, 0);
             this.Controls.SetChildIndex(this.label1, 0);
