@@ -75,7 +75,7 @@
             // 
             // txtbBkId
             // 
-            this.txtbBkId.Location = new System.Drawing.Point(254, 185);
+            this.txtbBkId.Location = new System.Drawing.Point(162, 48);
             this.txtbBkId.Name = "txtbBkId";
             this.txtbBkId.ReadOnly = true;
             this.txtbBkId.Size = new System.Drawing.Size(164, 29);
@@ -85,7 +85,7 @@
             // 
             this.lblBkId.AutoSize = true;
             this.lblBkId.BackColor = System.Drawing.Color.Transparent;
-            this.lblBkId.Location = new System.Drawing.Point(129, 188);
+            this.lblBkId.Location = new System.Drawing.Point(37, 51);
             this.lblBkId.Name = "lblBkId";
             this.lblBkId.Size = new System.Drawing.Size(63, 21);
             this.lblBkId.TabIndex = 10;
@@ -95,7 +95,7 @@
             // 
             this.lblISBN.AutoSize = true;
             this.lblISBN.BackColor = System.Drawing.Color.Transparent;
-            this.lblISBN.Location = new System.Drawing.Point(522, 59);
+            this.lblISBN.Location = new System.Drawing.Point(522, 47);
             this.lblISBN.Name = "lblISBN";
             this.lblISBN.Size = new System.Drawing.Size(47, 21);
             this.lblISBN.TabIndex = 12;
@@ -105,7 +105,7 @@
             // 
             this.lblBkTitle.AutoSize = true;
             this.lblBkTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblBkTitle.Location = new System.Drawing.Point(129, 236);
+            this.lblBkTitle.Location = new System.Drawing.Point(37, 99);
             this.lblBkTitle.Name = "lblBkTitle";
             this.lblBkTitle.Size = new System.Drawing.Size(81, 21);
             this.lblBkTitle.TabIndex = 14;
@@ -113,7 +113,7 @@
             // 
             // txtbBkTitle
             // 
-            this.txtbBkTitle.Location = new System.Drawing.Point(253, 233);
+            this.txtbBkTitle.Location = new System.Drawing.Point(161, 96);
             this.txtbBkTitle.Name = "txtbBkTitle";
             this.txtbBkTitle.Size = new System.Drawing.Size(853, 29);
             this.txtbBkTitle.TabIndex = 6;
@@ -123,7 +123,7 @@
             // 
             this.lblAuthor.AutoSize = true;
             this.lblAuthor.BackColor = System.Drawing.Color.Transparent;
-            this.lblAuthor.Location = new System.Drawing.Point(131, 284);
+            this.lblAuthor.Location = new System.Drawing.Point(39, 147);
             this.lblAuthor.Name = "lblAuthor";
             this.lblAuthor.Size = new System.Drawing.Size(61, 21);
             this.lblAuthor.TabIndex = 16;
@@ -131,7 +131,7 @@
             // 
             // txtbAuthor
             // 
-            this.txtbAuthor.Location = new System.Drawing.Point(253, 281);
+            this.txtbAuthor.Location = new System.Drawing.Point(161, 144);
             this.txtbAuthor.Name = "txtbAuthor";
             this.txtbAuthor.Size = new System.Drawing.Size(853, 29);
             this.txtbAuthor.TabIndex = 7;
@@ -140,7 +140,7 @@
             // 
             this.lblCallNum.AutoSize = true;
             this.lblCallNum.BackColor = System.Drawing.Color.Transparent;
-            this.lblCallNum.Location = new System.Drawing.Point(128, 381);
+            this.lblCallNum.Location = new System.Drawing.Point(36, 244);
             this.lblCallNum.Name = "lblCallNum";
             this.lblCallNum.Size = new System.Drawing.Size(101, 21);
             this.lblCallNum.TabIndex = 18;
@@ -148,7 +148,7 @@
             // 
             // txtbCallNum
             // 
-            this.txtbCallNum.Location = new System.Drawing.Point(253, 378);
+            this.txtbCallNum.Location = new System.Drawing.Point(161, 241);
             this.txtbCallNum.Name = "txtbCallNum";
             this.txtbCallNum.Size = new System.Drawing.Size(267, 29);
             this.txtbCallNum.TabIndex = 10;
@@ -158,7 +158,7 @@
             // 
             this.lblSubjectName.AutoSize = true;
             this.lblSubjectName.BackColor = System.Drawing.Color.Transparent;
-            this.lblSubjectName.Location = new System.Drawing.Point(522, 203);
+            this.lblSubjectName.Location = new System.Drawing.Point(522, 191);
             this.lblSubjectName.Name = "lblSubjectName";
             this.lblSubjectName.Size = new System.Drawing.Size(110, 21);
             this.lblSubjectName.TabIndex = 20;
@@ -168,7 +168,7 @@
             // 
             this.lblPublisher.AutoSize = true;
             this.lblPublisher.BackColor = System.Drawing.Color.Transparent;
-            this.lblPublisher.Location = new System.Drawing.Point(128, 333);
+            this.lblPublisher.Location = new System.Drawing.Point(36, 196);
             this.lblPublisher.Name = "lblPublisher";
             this.lblPublisher.Size = new System.Drawing.Size(78, 21);
             this.lblPublisher.TabIndex = 22;
@@ -186,7 +186,7 @@
             // 
             // txtbPrice
             // 
-            this.txtbPrice.Location = new System.Drawing.Point(253, 427);
+            this.txtbPrice.Location = new System.Drawing.Point(161, 290);
             this.txtbPrice.Name = "txtbPrice";
             this.txtbPrice.Size = new System.Drawing.Size(85, 29);
             this.txtbPrice.TabIndex = 12;
@@ -196,7 +196,7 @@
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.BackColor = System.Drawing.Color.Transparent;
-            this.lblPrice.Location = new System.Drawing.Point(130, 428);
+            this.lblPrice.Location = new System.Drawing.Point(38, 291);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(47, 21);
             this.lblPrice.TabIndex = 26;
@@ -206,7 +206,7 @@
             // 
             this.lblEd.AutoSize = true;
             this.lblEd.BackColor = System.Drawing.Color.Transparent;
-            this.lblEd.Location = new System.Drawing.Point(522, 253);
+            this.lblEd.Location = new System.Drawing.Point(522, 244);
             this.lblEd.Name = "lblEd";
             this.lblEd.Size = new System.Drawing.Size(61, 21);
             this.lblEd.TabIndex = 28;
@@ -214,7 +214,7 @@
             // 
             // txtbEd
             // 
-            this.txtbEd.Location = new System.Drawing.Point(654, 249);
+            this.txtbEd.Location = new System.Drawing.Point(649, 241);
             this.txtbEd.Name = "txtbEd";
             this.txtbEd.Size = new System.Drawing.Size(281, 29);
             this.txtbEd.TabIndex = 11;
@@ -224,7 +224,7 @@
             this.cbxSubjectName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxSubjectName.DropDownWidth = 250;
             this.cbxSubjectName.FormattingEnabled = true;
-            this.cbxSubjectName.Location = new System.Drawing.Point(745, 333);
+            this.cbxSubjectName.Location = new System.Drawing.Point(649, 193);
             this.cbxSubjectName.Name = "cbxSubjectName";
             this.cbxSubjectName.Size = new System.Drawing.Size(281, 29);
             this.cbxSubjectName.TabIndex = 9;
@@ -234,7 +234,7 @@
             // 
             this.cbxPublisher.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxPublisher.FormattingEnabled = true;
-            this.cbxPublisher.Location = new System.Drawing.Point(253, 330);
+            this.cbxPublisher.Location = new System.Drawing.Point(161, 193);
             this.cbxPublisher.Name = "cbxPublisher";
             this.cbxPublisher.Size = new System.Drawing.Size(267, 29);
             this.cbxPublisher.TabIndex = 8;
@@ -246,7 +246,7 @@
             this.lblCompul1.BackColor = System.Drawing.Color.Transparent;
             this.lblCompul1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCompul1.ForeColor = System.Drawing.Color.Red;
-            this.lblCompul1.Location = new System.Drawing.Point(234, 193);
+            this.lblCompul1.Location = new System.Drawing.Point(142, 56);
             this.lblCompul1.Name = "lblCompul1";
             this.lblCompul1.Size = new System.Drawing.Size(12, 13);
             this.lblCompul1.TabIndex = 35;
@@ -258,7 +258,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(233, 242);
+            this.label11.Location = new System.Drawing.Point(141, 105);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(12, 13);
             this.label11.TabIndex = 36;
@@ -282,7 +282,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Red;
-            this.label14.Location = new System.Drawing.Point(726, 194);
+            this.label14.Location = new System.Drawing.Point(627, 55);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(12, 13);
             this.label14.TabIndex = 39;
@@ -294,7 +294,7 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Red;
-            this.label15.Location = new System.Drawing.Point(233, 340);
+            this.label15.Location = new System.Drawing.Point(141, 203);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(12, 13);
             this.label15.TabIndex = 38;
@@ -306,7 +306,7 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Red;
-            this.label16.Location = new System.Drawing.Point(235, 387);
+            this.label16.Location = new System.Drawing.Point(143, 250);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(12, 13);
             this.label16.TabIndex = 41;
@@ -318,7 +318,7 @@
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Red;
-            this.label17.Location = new System.Drawing.Point(235, 434);
+            this.label17.Location = new System.Drawing.Point(143, 297);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(12, 13);
             this.label17.TabIndex = 42;
@@ -328,7 +328,7 @@
             // 
             this.lblYear.AutoSize = true;
             this.lblYear.BackColor = System.Drawing.Color.Transparent;
-            this.lblYear.Location = new System.Drawing.Point(522, 297);
+            this.lblYear.Location = new System.Drawing.Point(522, 293);
             this.lblYear.Name = "lblYear";
             this.lblYear.Size = new System.Drawing.Size(115, 21);
             this.lblYear.TabIndex = 44;
@@ -340,7 +340,7 @@
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Red;
-            this.label19.Location = new System.Drawing.Point(727, 343);
+            this.label19.Location = new System.Drawing.Point(632, 197);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(12, 13);
             this.label19.TabIndex = 45;
@@ -348,9 +348,14 @@
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(438, 671);
+            this.btnSubmit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSubmit.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnSubmit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnSubmit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmit.Location = new System.Drawing.Point(376, 595);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(82, 31);
+            this.btnSubmit.Size = new System.Drawing.Size(92, 40);
             this.btnSubmit.TabIndex = 18;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
@@ -358,9 +363,14 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(681, 671);
+            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnCancel.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnCancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Location = new System.Drawing.Point(619, 595);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(82, 31);
+            this.btnCancel.Size = new System.Drawing.Size(92, 40);
             this.btnCancel.TabIndex = 19;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -372,7 +382,7 @@
             // 
             // mtbYear
             // 
-            this.mtbYear.Location = new System.Drawing.Point(654, 296);
+            this.mtbYear.Location = new System.Drawing.Point(649, 288);
             this.mtbYear.Mask = "0000";
             this.mtbYear.Name = "mtbYear";
             this.mtbYear.Size = new System.Drawing.Size(93, 29);
@@ -381,7 +391,7 @@
             // 
             // mtbISBN
             // 
-            this.mtbISBN.Location = new System.Drawing.Point(649, 55);
+            this.mtbISBN.Location = new System.Drawing.Point(649, 43);
             this.mtbISBN.Mask = "0000000000000";
             this.mtbISBN.Name = "mtbISBN";
             this.mtbISBN.RejectInputOnFirstFailure = true;
@@ -431,12 +441,32 @@
             this.gbxBasicInfo.BackColor = System.Drawing.Color.Transparent;
             this.gbxBasicInfo.Controls.Add(this.lblISBN);
             this.gbxBasicInfo.Controls.Add(this.mtbISBN);
+            this.gbxBasicInfo.Controls.Add(this.label19);
             this.gbxBasicInfo.Controls.Add(this.lblSubjectName);
+            this.gbxBasicInfo.Controls.Add(this.cbxSubjectName);
+            this.gbxBasicInfo.Controls.Add(this.label14);
+            this.gbxBasicInfo.Controls.Add(this.label17);
             this.gbxBasicInfo.Controls.Add(this.lblEd);
+            this.gbxBasicInfo.Controls.Add(this.label16);
             this.gbxBasicInfo.Controls.Add(this.lblYear);
             this.gbxBasicInfo.Controls.Add(this.mtbYear);
+            this.gbxBasicInfo.Controls.Add(this.label15);
             this.gbxBasicInfo.Controls.Add(this.txtbEd);
-            this.gbxBasicInfo.Location = new System.Drawing.Point(91, 129);
+            this.gbxBasicInfo.Controls.Add(this.label11);
+            this.gbxBasicInfo.Controls.Add(this.lblBkId);
+            this.gbxBasicInfo.Controls.Add(this.lblCompul1);
+            this.gbxBasicInfo.Controls.Add(this.txtbBkId);
+            this.gbxBasicInfo.Controls.Add(this.cbxPublisher);
+            this.gbxBasicInfo.Controls.Add(this.txtbBkTitle);
+            this.gbxBasicInfo.Controls.Add(this.lblBkTitle);
+            this.gbxBasicInfo.Controls.Add(this.lblPrice);
+            this.gbxBasicInfo.Controls.Add(this.txtbAuthor);
+            this.gbxBasicInfo.Controls.Add(this.txtbPrice);
+            this.gbxBasicInfo.Controls.Add(this.lblAuthor);
+            this.gbxBasicInfo.Controls.Add(this.lblPublisher);
+            this.gbxBasicInfo.Controls.Add(this.txtbCallNum);
+            this.gbxBasicInfo.Controls.Add(this.lblCallNum);
+            this.gbxBasicInfo.Location = new System.Drawing.Point(22, 81);
             this.gbxBasicInfo.Name = "gbxBasicInfo";
             this.gbxBasicInfo.Size = new System.Drawing.Size(1045, 343);
             this.gbxBasicInfo.TabIndex = 58;
@@ -452,7 +482,7 @@
             this.gbxRFID.Controls.Add(this.btnAddRFID);
             this.gbxRFID.Controls.Add(this.label13);
             this.gbxRFID.Controls.Add(this.txtbRFID);
-            this.gbxRFID.Location = new System.Drawing.Point(92, 499);
+            this.gbxRFID.Location = new System.Drawing.Point(22, 430);
             this.gbxRFID.Name = "gbxRFID";
             this.gbxRFID.Size = new System.Drawing.Size(1044, 135);
             this.gbxRFID.TabIndex = 59;
@@ -463,29 +493,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.ClientSize = new System.Drawing.Size(1276, 773);
+            this.ClientSize = new System.Drawing.Size(1084, 661);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.lblCompul1);
-            this.Controls.Add(this.cbxPublisher);
-            this.Controls.Add(this.cbxSubjectName);
-            this.Controls.Add(this.lblPrice);
-            this.Controls.Add(this.txtbPrice);
-            this.Controls.Add(this.lblPublisher);
-            this.Controls.Add(this.lblCallNum);
-            this.Controls.Add(this.txtbCallNum);
-            this.Controls.Add(this.lblAuthor);
-            this.Controls.Add(this.txtbAuthor);
-            this.Controls.Add(this.lblBkTitle);
-            this.Controls.Add(this.txtbBkTitle);
-            this.Controls.Add(this.lblBkId);
-            this.Controls.Add(this.txtbBkId);
             this.Controls.Add(this.gbxBasicInfo);
             this.Controls.Add(this.gbxRFID);
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
@@ -495,26 +505,6 @@
             this.Controls.SetChildIndex(this.gbxRFID, 0);
             this.Controls.SetChildIndex(this.gbxBasicInfo, 0);
             this.Controls.SetChildIndex(this.label1, 0);
-            this.Controls.SetChildIndex(this.txtbBkId, 0);
-            this.Controls.SetChildIndex(this.lblBkId, 0);
-            this.Controls.SetChildIndex(this.txtbBkTitle, 0);
-            this.Controls.SetChildIndex(this.lblBkTitle, 0);
-            this.Controls.SetChildIndex(this.txtbAuthor, 0);
-            this.Controls.SetChildIndex(this.lblAuthor, 0);
-            this.Controls.SetChildIndex(this.txtbCallNum, 0);
-            this.Controls.SetChildIndex(this.lblCallNum, 0);
-            this.Controls.SetChildIndex(this.lblPublisher, 0);
-            this.Controls.SetChildIndex(this.txtbPrice, 0);
-            this.Controls.SetChildIndex(this.lblPrice, 0);
-            this.Controls.SetChildIndex(this.cbxSubjectName, 0);
-            this.Controls.SetChildIndex(this.cbxPublisher, 0);
-            this.Controls.SetChildIndex(this.lblCompul1, 0);
-            this.Controls.SetChildIndex(this.label11, 0);
-            this.Controls.SetChildIndex(this.label15, 0);
-            this.Controls.SetChildIndex(this.label14, 0);
-            this.Controls.SetChildIndex(this.label16, 0);
-            this.Controls.SetChildIndex(this.label17, 0);
-            this.Controls.SetChildIndex(this.label19, 0);
             this.Controls.SetChildIndex(this.btnSubmit, 0);
             this.Controls.SetChildIndex(this.btnCancel, 0);
             ((System.ComponentModel.ISupportInitialize)(this.epAddBk)).EndInit();
