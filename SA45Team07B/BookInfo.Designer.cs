@@ -460,7 +460,6 @@
             this.Text = "View Book Details";
             this.Controls.SetChildIndex(this.gbxAvail, 0);
             this.Controls.SetChildIndex(this.gbxBasicInfo, 0);
-            this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.btnClose, 0);
             this.Controls.SetChildIndex(this.statusStrip1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAvail)).EndInit();

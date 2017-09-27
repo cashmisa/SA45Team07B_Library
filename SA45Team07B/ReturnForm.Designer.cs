@@ -521,6 +521,7 @@
             this.Name = "ReturnForm";
             this.Text = "Return Book";
             this.Load += new System.EventHandler(this.ReturnForm_Load);
+            //this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.gbReturnTransaction, 0);
             this.Controls.SetChildIndex(this.gbBookInfo, 0);
             this.Controls.SetChildIndex(this.gpBorrowerInfo, 0);
